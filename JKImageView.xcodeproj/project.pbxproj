@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049456B21BEB6AC300E0CBDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B11BEB6AC300E0CBDA /* main.m */; };
+		049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B41BEB6AC300E0CBDA /* AppDelegate.m */; };
+		049456B81BEB6AC300E0CBDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B71BEB6AC300E0CBDA /* ViewController.m */; };
+		049456BB1BEB6AC300E0CBDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049456B91BEB6AC300E0CBDA /* Main.storyboard */; };
+		049456BD1BEB6AC300E0CBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049456BC1BEB6AC300E0CBDA /* Assets.xcassets */; };
+		049456C01BEB6AC300E0CBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049456BE1BEB6AC300E0CBDA /* LaunchScreen.storyboard */; };
+		049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456CA1BEB6AC300E0CBDA /* JKImageViewTests.m */; };
+		049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049456C71BEB6AC300E0CBDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049456A51BEB6AC300E0CBDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049456AC1BEB6AC300E0CBDA;
+			remoteInfo = JKImageView;
+		};
+		049456D21BEB6AC400E0CBDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049456A51BEB6AC300E0CBDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049456AC1BEB6AC300E0CBDA;
+			remoteInfo = JKImageView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049456AD1BEB6AC300E0CBDA /* JKImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		049456B11BEB6AC300E0CBDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		049456B31BEB6AC300E0CBDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		049456B41BEB6AC300E0CBDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		049456B61BEB6AC300E0CBDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		049456B71BEB6AC300E0CBDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		049456BA1BEB6AC300E0CBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		049456BC1BEB6AC300E0CBDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		049456BF1BEB6AC300E0CBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		049456C11BEB6AC300E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049456C61BEB6AC300E0CBDA /* JKImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049456CA1BEB6AC300E0CBDA /* JKImageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKImageViewTests.m; sourceTree = "<group>"; };
+		049456CC1BEB6AC300E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049456D11BEB6AC400E0CBDA /* JKImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKImageViewUITests.m; sourceTree = "<group>"; };
+		049456D71BEB6AC400E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		049456AA1BEB6AC300E0CBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456C31BEB6AC300E0CBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456CE1BEB6AC400E0CBDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049456A41BEB6AC300E0CBDA = {
+			isa = PBXGroup;
+			children = (
+				049456AF1BEB6AC300E0CBDA /* JKImageView */,
+				049456C91BEB6AC300E0CBDA /* JKImageViewTests */,
+				049456D41BEB6AC400E0CBDA /* JKImageViewUITests */,
+				049456AE1BEB6AC300E0CBDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		049456AE1BEB6AC300E0CBDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049456AD1BEB6AC300E0CBDA /* JKImageView.app */,
+				049456C61BEB6AC300E0CBDA /* JKImageViewTests.xctest */,
+				049456D11BEB6AC400E0CBDA /* JKImageViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049456AF1BEB6AC300E0CBDA /* JKImageView */ = {
+			isa = PBXGroup;
+			children = (
+				049456B31BEB6AC300E0CBDA /* AppDelegate.h */,
+				049456B41BEB6AC300E0CBDA /* AppDelegate.m */,
+				049456B61BEB6AC300E0CBDA /* ViewController.h */,
+				049456B71BEB6AC300E0CBDA /* ViewController.m */,
+				049456B91BEB6AC300E0CBDA /* Main.storyboard */,
+				049456BC1BEB6AC300E0CBDA /* Assets.xcassets */,
+				049456BE1BEB6AC300E0CBDA /* LaunchScreen.storyboard */,
+				049456C11BEB6AC300E0CBDA /* Info.plist */,
+				049456B01BEB6AC300E0CBDA /* Supporting Files */,
+			);
+			path = JKImageView;
+			sourceTree = "<group>";
+		};
+		049456B01BEB6AC300E0CBDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				049456B11BEB6AC300E0CBDA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		049456C91BEB6AC300E0CBDA /* JKImageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				049456CA1BEB6AC300E0CBDA /* JKImageViewTests.m */,
+				049456CC1BEB6AC300E0CBDA /* Info.plist */,
+			);
+			path = JKImageViewTests;
+			sourceTree = "<group>";
+		};
+		049456D41BEB6AC400E0CBDA /* JKImageViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */,
+				049456D71BEB6AC400E0CBDA /* Info.plist */,
+			);
+			path = JKImageViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		049456AC1BEB6AC300E0CBDA /* JKImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049456DA1BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageView" */;
+			buildPhases = (
+				049456A91BEB6AC300E0CBDA /* Sources */,
+				049456AA1BEB6AC300E0CBDA /* Frameworks */,
+				049456AB1BEB6AC300E0CBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKImageView;
+			productName = JKImageView;
+			productReference = 049456AD1BEB6AC300E0CBDA /* JKImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		049456C51BEB6AC300E0CBDA /* JKImageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049456DD1BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageViewTests" */;
+			buildPhases = (
+				049456C21BEB6AC300E0CBDA /* Sources */,
+				049456C31BEB6AC300E0CBDA /* Frameworks */,
+				049456C41BEB6AC300E0CBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049456C81BEB6AC300E0CBDA /* PBXTargetDependency */,
+			);
+			name = JKImageViewTests;
+			productName = JKImageViewTests;
+			productReference = 049456C61BEB6AC300E0CBDA /* JKImageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		049456D01BEB6AC400E0CBDA /* JKImageViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049456E01BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageViewUITests" */;
+			buildPhases = (
+				049456CD1BEB6AC400E0CBDA /* Sources */,
+				049456CE1BEB6AC400E0CBDA /* Frameworks */,
+				049456CF1BEB6AC400E0CBDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049456D31BEB6AC400E0CBDA /* PBXTargetDependency */,
+			);
+			name = JKImageViewUITests;
+			productName = JKImageViewUITests;
+			productReference = 049456D11BEB6AC400E0CBDA /* JKImageViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		049456A51BEB6AC300E0CBDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Jack;
+				TargetAttributes = {
+					049456AC1BEB6AC300E0CBDA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					049456C51BEB6AC300E0CBDA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 049456AC1BEB6AC300E0CBDA;
+					};
+					049456D01BEB6AC400E0CBDA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 049456AC1BEB6AC300E0CBDA;
+					};
+				};
+			};
+			buildConfigurationList = 049456A81BEB6AC300E0CBDA /* Build configuration list for PBXProject "JKImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 049456A41BEB6AC300E0CBDA;
+			productRefGroup = 049456AE1BEB6AC300E0CBDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				049456AC1BEB6AC300E0CBDA /* JKImageView */,
+				049456C51BEB6AC300E0CBDA /* JKImageViewTests */,
+				049456D01BEB6AC400E0CBDA /* JKImageViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		049456AB1BEB6AC300E0CBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049456C01BEB6AC300E0CBDA /* LaunchScreen.storyboard in Resources */,
+				049456BD1BEB6AC300E0CBDA /* Assets.xcassets in Resources */,
+				049456BB1BEB6AC300E0CBDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456C41BEB6AC300E0CBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456CF1BEB6AC400E0CBDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		049456A91BEB6AC300E0CBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049456B81BEB6AC300E0CBDA /* ViewController.m in Sources */,
+				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
+				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456C21BEB6AC300E0CBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		049456CD1BEB6AC400E0CBDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049456C81BEB6AC300E0CBDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049456AC1BEB6AC300E0CBDA /* JKImageView */;
+			targetProxy = 049456C71BEB6AC300E0CBDA /* PBXContainerItemProxy */;
+		};
+		049456D31BEB6AC400E0CBDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049456AC1BEB6AC300E0CBDA /* JKImageView */;
+			targetProxy = 049456D21BEB6AC400E0CBDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		049456B91BEB6AC300E0CBDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049456BA1BEB6AC300E0CBDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		049456BE1BEB6AC300E0CBDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049456BF1BEB6AC300E0CBDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		049456D81BEB6AC400E0CBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		049456D91BEB6AC400E0CBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		049456DB1BEB6AC400E0CBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		049456DC1BEB6AC400E0CBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		049456DE1BEB6AC400E0CBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKImageView.app/JKImageView";
+			};
+			name = Debug;
+		};
+		049456DF1BEB6AC400E0CBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JKImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKImageView.app/JKImageView";
+			};
+			name = Release;
+		};
+		049456E11BEB6AC400E0CBDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKImageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKImageView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		049456E21BEB6AC400E0CBDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JKImageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JKImageView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		049456A81BEB6AC300E0CBDA /* Build configuration list for PBXProject "JKImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049456D81BEB6AC400E0CBDA /* Debug */,
+				049456D91BEB6AC400E0CBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		049456DA1BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049456DB1BEB6AC400E0CBDA /* Debug */,
+				049456DC1BEB6AC400E0CBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		049456DD1BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049456DE1BEB6AC400E0CBDA /* Debug */,
+				049456DF1BEB6AC400E0CBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		049456E01BEB6AC400E0CBDA /* Build configuration list for PBXNativeTarget "JKImageViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049456E11BEB6AC400E0CBDA /* Debug */,
+				049456E21BEB6AC400E0CBDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 049456A51BEB6AC300E0CBDA /* Project object */;
+}
