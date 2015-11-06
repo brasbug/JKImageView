@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImageView (JKWebCache)
-
-- (void)jk_setImageWithURL:(NSURL *)url;
+//使用Thread 做异步加载图片
+- (void)jk_setImage_ThreadWithURL:(NSURL *)url;
 
 @end
