@@ -13,5 +13,7 @@
 
 - (void)startSyncThreadTest;
 
+- (void)stopThread;
+
 
 @end

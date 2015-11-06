@@ -13,6 +13,8 @@
 @property (nonatomic, strong) UIImageView *testImageView;
 @property (weak, nonatomic) IBOutlet UIButton *syncThreadBtn;
 
+@property (nonatomic, strong)  TestSyncThread *test;
+
 @end
 
 @implementation ViewController
@@ -31,13 +33,20 @@
     
 }
 
+
+
 - (IBAction)syncThreadBtnPressed:(id)sender {
-    TestSyncThread *test = [[TestSyncThread alloc]init];
-    [test startSyncThreadTest];
+    self.test = [[TestSyncThread alloc]init];
+    [self.test startSyncThreadTest];
     
 }
 
 
+
+- (IBAction)syncCancelThreadOneBtnPressed:(id)sender
+{
+    [self.test stopThread];
+}
 
 - (void)viewDidAppear:(BOOL)animated
 {

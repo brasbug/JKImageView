@@ -26,7 +26,7 @@
 - (void)startSyncThreadTest
 {
     
-    tickets = 20;
+    tickets = 100;
     count = 0;
     theLock = [[NSLock alloc] init];
     // 锁对象
@@ -43,6 +43,11 @@
 
 
 
+- (void)stopThread
+{
+    
+}
+
 - (void)run{
     while (TRUE) {
         // 上锁
@@ -50,7 +55,7 @@
         [theLock lock];
         if(tickets >= 0){
             [NSThread sleepForTimeInterval:0.09];
-            count = 20 - tickets;
+            count = 100 - tickets;
             NSLog(@"当前票数是:%d,售出:%d,线程名:%@",tickets,count,[[NSThread currentThread] name]);
             tickets--;
         }else{

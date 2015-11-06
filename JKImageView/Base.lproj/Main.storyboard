@@ -52,11 +52,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vn-G8-d67">
-                                <rect key="frame" x="7" y="161" width="80" height="30"/>
+                                <rect key="frame" x="7" y="142" width="80" height="30"/>
                                 <animations/>
                                 <state key="normal" title="syncThread"/>
                                 <connections>
                                     <action selector="syncThreadBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="tfE-u6-dKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvf-Pm-zJN">
+                                <rect key="frame" x="16" y="180" width="94" height="30"/>
+                                <animations/>
+                                <state key="normal" title="cancelThread"/>
+                                <connections>
+                                    <action selector="syncCancelThreadOneBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="AbP-Ly-4WC"/>
                                 </connections>
                             </button>
                         </subviews>

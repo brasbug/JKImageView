@@ -11,7 +11,7 @@
 
 @implementation UIImageView (JKWebCache)
 
-
+#pragma mark-Thread
 - (void)jk_setImage_ThreadWithURL:(NSURL *)url
 {
     NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(downLoadImage:) object:url];
@@ -37,6 +37,14 @@
 {
     self.image = image;
 }
+
+
+#pragma mark-Operation
+- (void)jk_setimage_OperationWithURL:(NSURL *)url
+{
+    
+}
+
 
 
 @end

@@ -12,4 +12,7 @@
 //使用Thread 做异步加载图片
 - (void)jk_setImage_ThreadWithURL:(NSURL *)url;
 
+- (void)jk_setimage_OperationWithURL:(NSURL *)url;
+
+
 @end
