@@ -45,7 +45,6 @@
 
 - (IBAction)syncCancelThreadOneBtnPressed:(id)sender
 {
-    [self.test stopThread];
 }
 
 - (void)viewDidAppear:(BOOL)animated

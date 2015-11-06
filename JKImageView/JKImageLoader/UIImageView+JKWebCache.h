@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface UIImageView (JKWebCache)
-//使用Thread 做异步加载图片
+//使用Thread 
 - (void)jk_setImage_ThreadWithURL:(NSURL *)url;
 
+
+//使用NSOperation
 - (void)jk_setimage_OperationWithURL:(NSURL *)url;
 
+
+//使用GCD
+- (void)jk_setImage_GCDWithURL:(NSURL *)url;
 
 @end
