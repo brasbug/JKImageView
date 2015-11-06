@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "TestSyncThread.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIImageView *testImageView;
+@property (weak, nonatomic) IBOutlet UIButton *syncThreadBtn;
 
 @end
 
@@ -18,10 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _testImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JKdeviceWidth, JKdeviceHeight)];
-    _testImageView.contentMode = UIViewContentModeScaleAspectFit;
-    _testImageView.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.183];
-    [self.view addSubview:_testImageView];
+//    _testImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JKdeviceWidth, JKdeviceHeight)];
+//    _testImageView.contentMode = UIViewContentModeScaleAspectFit;
+//    _testImageView.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.183];
+//    [self.view addSubview:_testImageView];
     
     //http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg
    
@@ -29,6 +31,11 @@
     
 }
 
+- (IBAction)syncThreadBtnPressed:(id)sender {
+    TestSyncThread *test = [[TestSyncThread alloc]init];
+    [test startSyncThreadTest];
+    
+}
 
 
 

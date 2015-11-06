@@ -27,9 +27,9 @@
     if(image == nil){
         //这里可以写下载失败方法
     }else{
-        //这里写成功回调， 回调到主线程   这个就是所谓的线程间通讯，
+        //这里写成功回调， 回调到主线程   这个就是所谓的线程间通讯，除了可以更新主线程的数据外，还可以更新其他线程的比如使用用:performSelector:onThread:withObject:waitUntilDone:
         [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
-        //除了可以更新主线程的数据外，还可以更新其他线程的比如：用:performSelector:onThread:withObject:waitUntilDone:
+        
     }
 }
 

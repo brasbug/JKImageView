@@ -26,7 +26,7 @@
         <!--View Controller-->
         <scene sceneID="YFW-1Z-2iG">
             <objects>
-                <viewController id="8Br-ro-Xud" sceneMemberID="viewController">
+                <viewController id="8Br-ro-Xud" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="peJ-Yf-yC9"/>
                         <viewControllerLayoutGuide type="bottom" id="6RS-Sp-8fh"/>
@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCO-Ou-7r6">
-                                <rect key="frame" x="137" y="129" width="46" height="30"/>
+                                <rect key="frame" x="15" y="91" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -44,11 +44,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O60-au-S20">
-                                <rect key="frame" x="127" y="333" width="67" height="30"/>
+                                <rect key="frame" x="98" y="91" width="67" height="30"/>
                                 <animations/>
                                 <state key="normal" title="tableView"/>
                                 <connections>
                                     <segue destination="Byv-AJ-1v3" kind="show" id="cPY-zO-Zyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vn-G8-d67">
+                                <rect key="frame" x="7" y="161" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="syncThread"/>
+                                <connections>
+                                    <action selector="syncThreadBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="tfE-u6-dKj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +64,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IOO-tk-9ou"/>
+                    <connections>
+                        <outlet property="syncThreadBtn" destination="6vn-G8-d67" id="tvX-M4-x6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Do-nH-P1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
