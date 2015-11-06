@@ -19,6 +19,9 @@
 		047B28F71BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
 		047B28F81BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
 		047B28F91BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
+		047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
+		047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
+		047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
 		049456B21BEB6AC300E0CBDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B11BEB6AC300E0CBDA /* main.m */; };
 		049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B41BEB6AC300E0CBDA /* AppDelegate.m */; };
 		049456B81BEB6AC300E0CBDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456B71BEB6AC300E0CBDA /* ViewController.m */; };
@@ -56,6 +59,8 @@
 		047B28F11BEC504F008763A1 /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
 		047B28F21BEC504F008763A1 /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
 		047B28F31BEC504F008763A1 /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKWebCache.h"; sourceTree = "<group>"; };
+		047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKWebCache.m"; sourceTree = "<group>"; };
 		049456AD1BEB6AC300E0CBDA /* JKImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049456B11BEB6AC300E0CBDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049456B31BEB6AC300E0CBDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +129,15 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		047B28FA1BEC7852008763A1 /* JKImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */,
+				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
+			);
+			path = JKImageLoader;
+			sourceTree = "<group>";
+		};
 		049456A41BEB6AC300E0CBDA = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +163,7 @@
 		049456AF1BEB6AC300E0CBDA /* JKImageView */ = {
 			isa = PBXGroup;
 			children = (
+				047B28FA1BEC7852008763A1 /* JKImageLoader */,
 				047B28EB1BEC5028008763A1 /* SubViews */,
 				04391A401BEC4C7F004897A2 /* Controllers */,
 				049456B31BEB6AC300E0CBDA /* AppDelegate.h */,
@@ -396,6 +411,7 @@
 				047B28F41BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
 				047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */,
+				047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
 			);
@@ -407,6 +423,7 @@
 			files = (
 				047B28EF1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F51BEC504F008763A1 /* TestTableViewCell.m in Sources */,
+				047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
 			);
@@ -418,6 +435,7 @@
 			files = (
 				047B28F01BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F61BEC504F008763A1 /* TestTableViewCell.m in Sources */,
+				047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
 			);
