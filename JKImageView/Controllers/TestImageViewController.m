@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) UIImageView *testImageView;
 
-
-
 @end
 
 @implementation TestImageViewController

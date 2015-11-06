@@ -36,11 +36,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCO-Ou-7r6">
-                                <rect key="frame" x="137" y="220" width="46" height="30"/>
+                                <rect key="frame" x="137" y="129" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="XNe-iq-8kP" kind="show" id="a9t-IQ-wOA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O60-au-S20">
+                                <rect key="frame" x="127" y="333" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="tableView"/>
+                                <connections>
+                                    <segue destination="Byv-AJ-1v3" kind="show" id="cPY-zO-Zyh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,7 +78,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KeZ-Xh-0eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="350"/>
+            <point key="canvasLocation" x="412" y="133"/>
+        </scene>
+        <!--Test Table View Controller-->
+        <scene sceneID="K6q-5K-t8B">
+            <objects>
+                <tableViewController id="Byv-AJ-1v3" customClass="TestTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jw0-xb-0Av">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Byv-AJ-1v3" id="Z7B-El-44r"/>
+                            <outlet property="delegate" destination="Byv-AJ-1v3" id="bNk-OY-qm7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XW-XN-sv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="786"/>
         </scene>
     </scenes>
 </document>
