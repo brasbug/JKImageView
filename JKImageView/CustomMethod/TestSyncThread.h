@@ -13,5 +13,6 @@
 
 - (void)startSyncThreadTest;
 
+- (void)starThreadWith:(UIImageView *)imageView;
 
 @end

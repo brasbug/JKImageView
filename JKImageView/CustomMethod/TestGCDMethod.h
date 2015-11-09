@@ -10,7 +10,10 @@
 
 @interface TestGCDMethod : NSObject
 
+//并发队列测试
 - (void)testConcurrentDisQueue;
+//串行队列测试
 - (void)testSerialDisQueue;
-
+//同步函数添加到并发队列中测试
+- (void)testSyncQueue;
 @end

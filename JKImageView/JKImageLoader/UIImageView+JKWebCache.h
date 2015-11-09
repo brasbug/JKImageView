@@ -22,4 +22,6 @@
 //使用GCD
 - (void)jk_setImage_GCDWithURL:(NSURL *)url;
 
+-(void)updateUI:(UIImage*) image;
+
 @end

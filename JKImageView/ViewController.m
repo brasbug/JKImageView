@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong)  TestSyncThread *test;
 
+
 @end
 
 @implementation ViewController
@@ -32,25 +33,26 @@
     
     //http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg
    
-    
-    
+
 }
+
+
 
 - (IBAction)testNSOperationBtnPressed:(id)sender {
     TestOperation *test =[[TestOperation alloc]init];
 //    [test testInvocationOperation];
-//    [test starAsyncThread_Use_NSOperationqueueWith:self.testImageView];
+    [test starAsyncThread_Use_NSOperationqueueWith:self.testImageView];
 //    [test startAsyncThread_Use_NSBlockOperationWith:self.testImageView];
 //    [test testThreadDependencyThread];
-    [test cancelSomeThread];
+//    [test cancelSomeThread];
     
 }
 
 
 - (IBAction)syncThreadBtnPressed:(id)sender {
     self.test = [[TestSyncThread alloc]init];
-    [self.test startSyncThreadTest];
-    
+//    [self.test startSyncThreadTest];
+    [self.test starThreadWith:self.testImageView];
 }
 
 
@@ -59,14 +61,13 @@
 {
     TestGCDMethod *test = [[TestGCDMethod alloc]init];
 //    [test testConcurrentDisQueue];
-    [test testSerialDisQueue];
+//    [test testSerialDisQueue];
+    [test testSyncQueue];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
