@@ -65,7 +65,7 @@
         cell = [[NSBundle mainBundle]loadNibNamed:@"TestTableViewCell" owner:self options:nil].firstObject;
     }
     //@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=bbe8c06043166d223877159c76220945/599e9d3df8dcd10054b2bf8a728b4710b8122fcc.jpg
-    NSInteger type = 1;
+    NSInteger type = 0;
     if (indexPath.row%2) {
         [cell setContentImageUrl:(type)?@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=bbe8c06043166d223877159c76220945/599e9d3df8dcd10054b2bf8a728b4710b8122fcc.jpg"];
     }

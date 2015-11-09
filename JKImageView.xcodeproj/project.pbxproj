@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043509A51BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
+		043509A61BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
+		043509A71BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
 		04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
 		04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
+		0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
+		0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
+		0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
 		047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B28ED1BEC5040008763A1 /* TestTableViewController.m */; };
 		047B28EF1BEC5040008763A1 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B28ED1BEC5040008763A1 /* TestTableViewController.m */; };
 		047B28F01BEC5040008763A1 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B28ED1BEC5040008763A1 /* TestTableViewController.m */; };
@@ -54,9 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043509A31BF0411400CE9924 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
+		043509A41BF0411400CE9924 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		04391A3A1BEC4A32004897A2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04391A411BEC4C92004897A2 /* TestImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImageViewController.h; sourceTree = "<group>"; };
 		04391A421BEC4C92004897A2 /* TestImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
+		0470CA731BEDF0A700287A09 /* TestGCDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDMethod.h; sourceTree = "<group>"; };
+		0470CA741BEDF0A700287A09 /* TestGCDMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDMethod.m; sourceTree = "<group>"; };
 		047B28EC1BEC5040008763A1 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
 		047B28ED1BEC5040008763A1 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		047B28F11BEC504F008763A1 /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
@@ -148,6 +158,10 @@
 			children = (
 				047B29061BECA104008763A1 /* TestSyncThread.h */,
 				047B29071BECA104008763A1 /* TestSyncThread.m */,
+				0470CA731BEDF0A700287A09 /* TestGCDMethod.h */,
+				0470CA741BEDF0A700287A09 /* TestGCDMethod.m */,
+				043509A31BF0411400CE9924 /* TestOperation.h */,
+				043509A41BF0411400CE9924 /* TestOperation.m */,
 			);
 			path = CustomMethod;
 			sourceTree = "<group>";
@@ -308,6 +322,7 @@
 				TargetAttributes = {
 					049456AC1BEB6AC300E0CBDA = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = BRH78G7TM3;
 					};
 					049456C51BEB6AC300E0CBDA = {
 						CreatedOnToolsVersion = 7.1;
@@ -426,10 +441,12 @@
 				049456B81BEB6AC300E0CBDA /* ViewController.m in Sources */,
 				047B28F41BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
+				0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
 				047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
+				043509A51BF0411400CE9924 /* TestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +454,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
 				047B28EF1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F51BEC504F008763A1 /* TestTableViewCell.m in Sources */,
+				043509A61BF0411400CE9924 /* TestOperation.m in Sources */,
 				047B29091BECA104008763A1 /* TestSyncThread.m in Sources */,
 				047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */,
@@ -450,8 +469,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
 				047B28F01BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F61BEC504F008763A1 /* TestTableViewCell.m in Sources */,
+				043509A71BF0411400CE9924 /* TestOperation.m in Sources */,
 				047B290A1BECA104008763A1 /* TestSyncThread.m in Sources */,
 				047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */,
@@ -579,11 +600,15 @@
 			baseConfigurationReference = BE810828170BEFC17A1BA553 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = JKImageView/PrefixHeader.pch;
 				INFOPLIST_FILE = JKImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -592,11 +617,15 @@
 			baseConfigurationReference = 50DB690ADF9F7397E703B305 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = JKImageView/PrefixHeader.pch;
 				INFOPLIST_FILE = JKImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

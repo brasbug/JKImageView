@@ -59,6 +59,26 @@
                                     <action selector="syncThreadBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="tfE-u6-dKj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpq-Ph-X25">
+                                <rect key="frame" x="15" y="188" width="61" height="30"/>
+                                <animations/>
+                                <state key="normal" title="GCDTest"/>
+                                <connections>
+                                    <action selector="testGCDBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="8zf-xA-n5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-FF-1zO">
+                                <rect key="frame" x="15" y="240" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="NSOperation"/>
+                                <connections>
+                                    <action selector="testNSOperationBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="QKK-2J-iOc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7v-1N-QkK">
+                                <rect key="frame" x="11" y="392" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,6 +86,7 @@
                     <navigationItem key="navigationItem" id="IOO-tk-9ou"/>
                     <connections>
                         <outlet property="syncThreadBtn" destination="6vn-G8-d67" id="tvX-M4-x6c"/>
+                        <outlet property="testImageView" destination="B7v-1N-QkK" id="vbQ-N6-Ph2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Do-nH-P1D" userLabel="First Responder" sceneMemberID="firstResponder"/>

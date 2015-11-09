@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import "TestSyncThread.h"
+#import "TestGCDMethod.h"
+#import "TestOperation.h"
+
 
 @interface ViewController ()
-@property (nonatomic, strong) UIImageView *testImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *testImageView;
 @property (weak, nonatomic) IBOutlet UIButton *syncThreadBtn;
 
 @property (nonatomic, strong)  TestSyncThread *test;
@@ -33,6 +36,15 @@
     
 }
 
+- (IBAction)testNSOperationBtnPressed:(id)sender {
+    TestOperation *test =[[TestOperation alloc]init];
+//    [test testInvocationOperation];
+//    [test starAsyncThread_Use_NSOperationqueueWith:self.testImageView];
+//    [test startAsyncThread_Use_NSBlockOperationWith:self.testImageView];
+//    [test testThreadDependencyThread];
+    [test cancelSomeThread];
+    
+}
 
 
 - (IBAction)syncThreadBtnPressed:(id)sender {
@@ -43,8 +55,11 @@
 
 
 
-- (IBAction)syncCancelThreadOneBtnPressed:(id)sender
+- (IBAction)testGCDBtnPressed:(id)sender
 {
+    TestGCDMethod *test = [[TestGCDMethod alloc]init];
+//    [test testConcurrentDisQueue];
+    [test testSerialDisQueue];
 }
 
 - (void)viewDidAppear:(BOOL)animated
