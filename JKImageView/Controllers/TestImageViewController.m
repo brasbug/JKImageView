@@ -18,14 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg
+    UIImage *image = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg"]]];
+    
     // Do any additional setup after loading the view.
     _testImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JKdeviceWidth, JKdeviceHeight)];
     _testImageView.contentMode = UIViewContentModeScaleAspectFit;
     _testImageView.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.183];
     [self.view addSubview:_testImageView];
 
-    //http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg
-    UIImage *image = [[UIImage alloc]initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg"]]];
     _testImageView.image = image;
     
 }
