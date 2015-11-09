@@ -79,6 +79,14 @@
                                 <rect key="frame" x="11" y="392" width="240" height="128"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvw-1c-Urw">
+                                <rect key="frame" x="148" y="142" width="74" height="30"/>
+                                <animations/>
+                                <state key="normal" title="NomalTest"/>
+                                <connections>
+                                    <action selector="nomalTestBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="pxo-lF-iAS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

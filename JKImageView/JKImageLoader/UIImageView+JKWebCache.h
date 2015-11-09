@@ -24,4 +24,12 @@
 
 -(void)updateUI:(UIImage*) image;
 
+
+
+
+//默认方法
+- (void)jk_setImageWith:(NSURL *)url;
+
+
+
 @end

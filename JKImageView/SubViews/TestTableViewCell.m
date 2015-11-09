@@ -13,9 +13,11 @@
 
 - (void)setContentImageUrl:(NSString *)urlStr
 {
-    [self.imageViewk jk_setImage_ThreadWithURL:[NSURL URLWithString:urlStr]];
-//    [self.imageViewk jk_setimage_OperationWithURL:[NSURL URLWithString:urlStr]];
+//    [self.imageViewk jk_setImage_ThreadWithURL:[NSURL URLWithString:urlStr]];
+    [self.imageViewk jk_setimage_OperationWithURL:[NSURL URLWithString:urlStr]];
 //    [self.imageViewk jk_setImage_GCDWithURL:[NSURL URLWithString:urlStr]];
+    
+//    [self.imageViewk sd_setImageWithURL:[NSURL URLWithString:urlStr]];
 }
 
 - (void)awakeFromNib {

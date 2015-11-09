@@ -10,6 +10,8 @@
 #import "TestSyncThread.h"
 #import "TestGCDMethod.h"
 #import "TestOperation.h"
+#import "TestObjc_setAssociatedObject.h"
+
 
 
 @interface ViewController ()
@@ -66,6 +68,13 @@
 }
 
 
+- (IBAction)nomalTestBtnPressed:(id)sender {
+    
+    TestObjc_setAssociatedObject *test = [[TestObjc_setAssociatedObject alloc]init];
+    [test testAssociatedObject];
+    
+    
+}
 
 
 
