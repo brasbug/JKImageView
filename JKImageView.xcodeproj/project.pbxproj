@@ -16,6 +16,9 @@
 		045417751BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
+		0454177A1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
+		0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
+		0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
 		0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
 		0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
 		0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
@@ -70,6 +73,8 @@
 		04391A421BEC4C92004897A2 /* TestImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
 		045417731BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc_setAssociatedObject.h; sourceTree = "<group>"; };
 		045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjc_setAssociatedObject.m; sourceTree = "<group>"; };
+		045417781BF0C00D001CC4E4 /* JKImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageCache.h; sourceTree = "<group>"; };
+		045417791BF0C00D001CC4E4 /* JKImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKImageCache.m; sourceTree = "<group>"; };
 		0470CA731BEDF0A700287A09 /* TestGCDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDMethod.h; sourceTree = "<group>"; };
 		0470CA741BEDF0A700287A09 /* TestGCDMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDMethod.m; sourceTree = "<group>"; };
 		047B28EC1BEC5040008763A1 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
@@ -154,6 +159,8 @@
 			children = (
 				047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */,
 				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
+				045417781BF0C00D001CC4E4 /* JKImageCache.h */,
+				045417791BF0C00D001CC4E4 /* JKImageCache.m */,
 			);
 			path = JKImageLoader;
 			sourceTree = "<group>";
@@ -449,6 +456,7 @@
 				045417751BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				047B28F41BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
+				0454177A1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 				0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
 				047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
@@ -471,6 +479,7 @@
 				04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
+				0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +496,7 @@
 				04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
+				0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
