@@ -71,6 +71,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         
         _diskCachePath = [self makeDiskCachePath:cacheNameSpace];
         
+        //把数据写入disk
         _fileManager = [NSFileManager new];
         
         
