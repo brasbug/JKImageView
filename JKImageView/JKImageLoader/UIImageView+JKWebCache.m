@@ -20,7 +20,7 @@
 
 - (void)downLoadImage:(NSURL *)url
 {
-    UIImage *image =  [[JKImageCache shareInstance] imageFromMemoryCacheForKey:url.absoluteString];
+    UIImage *image =  [[JKImageCache shareInstance] imageFromDiskCacheForKey:url.absoluteString];
     if (image) {
         [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
     }
@@ -29,13 +29,14 @@
         @autoreleasepool {
             //在子线程中完成下载
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-            UIImage *tempimage = [[UIImage alloc]initWithData:data];
-            [[JKImageCache shareInstance] storeImage:tempimage forKey:url.absoluteString];
-            if(tempimage == nil){
+            image = [[UIImage alloc]initWithData:data];
+//            [[JKImageCache shareInstance] storeImage:image forKey:url.absoluteString];
+            [[JKImageCache shareInstance]storeImage:image imageData:data forKey:url.absoluteString toDisk:YES];
+            if(image == nil){
                 //这里可以写下载失败方法
             }else{
                 //这里写成功回调， 回调到主线程   这个就是所谓的线程间通讯，除了可以更新主线程的数据外，还可以更新其他线程的比如使用用:performSelector:onThread:withObject:waitUntilDone:
-                [self performSelectorOnMainThread:@selector(updateUI:) withObject:tempimage waitUntilDone:YES];
+                [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
             }
         }
     }
@@ -45,6 +46,16 @@
 
 - (void)jk_setImageWith:(NSURL *)url
 {
+    if ([url isKindOfClass:NSString.class] ) {
+        url = [NSURL URLWithString:(NSString *)url];
+    }
+    if (![url isKindOfClass:NSURL.class]) {
+        url = nil;
+    }
+    if (!url) {
+        return;
+    }
+    
     //1.创建NSBlockOperation对象
     __weak __typeof__(self) weakSelf = self;
     NSBlockOperation *operationblock = [NSBlockOperation blockOperationWithBlock:^{

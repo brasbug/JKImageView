@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
+		04331FE71BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
+		04331FE81BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
+		04331FEB1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
+		04331FEC1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
+		04331FED1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
+		04331FF01BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
+		04331FF11BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
+		04331FF21BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
 		043509A51BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		043509A61BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		043509A71BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
@@ -66,6 +75,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKMultiFormat.h"; sourceTree = "<group>"; };
+		04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKMultiFormat.m"; sourceTree = "<group>"; };
+		04331FE91BF30E0D00E8DB33 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
+		04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
+		04331FEE1BF30E1B00E8DB33 /* UIImage+JKWebp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWebp.h"; sourceTree = "<group>"; };
+		04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWebp.m"; sourceTree = "<group>"; };
 		043509A31BF0411400CE9924 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
 		043509A41BF0411400CE9924 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		04391A3A1BEC4A32004897A2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -133,6 +148,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04331FE31BF30D4900E8DB33 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */,
+				04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */,
+				04331FE91BF30E0D00E8DB33 /* UIImage+JKGIF.h */,
+				04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */,
+				04331FEE1BF30E1B00E8DB33 /* UIImage+JKWebp.h */,
+				04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		04391A401BEC4C7F004897A2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +185,7 @@
 		047B28FA1BEC7852008763A1 /* JKImageLoader */ = {
 			isa = PBXGroup;
 			children = (
+				04331FE31BF30D4900E8DB33 /* Core */,
 				047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */,
 				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
 				045417781BF0C00D001CC4E4 /* JKImageCache.h */,
@@ -457,9 +486,12 @@
 				047B28F41BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
 				0454177A1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
+				04331FF01BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
 				0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
+				04331FEB1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
 				047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
+				04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
 				043509A51BF0411400CE9924 /* TestOperation.m in Sources */,
@@ -471,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
+				04331FE71BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				047B28EF1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F51BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				043509A61BF0411400CE9924 /* TestOperation.m in Sources */,
@@ -478,6 +511,8 @@
 				047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
+				04331FEC1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
+				04331FF11BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
 				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
 				0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
@@ -488,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
+				04331FE81BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				047B28F01BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F61BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				043509A71BF0411400CE9924 /* TestOperation.m in Sources */,
@@ -495,6 +531,8 @@
 				047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
 				04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
+				04331FED1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
+				04331FF21BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
 				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
 				0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
