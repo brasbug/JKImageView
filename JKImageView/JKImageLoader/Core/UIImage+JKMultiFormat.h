@@ -10,6 +10,7 @@
 
 @interface UIImage (JKMultiFormat)
 
+//支持GIF图片和Webp
 + (UIImage *)jk_imageWithData:(NSData *)data;
 
 + (UIImage *)decodedImageWithImage:(UIImage *)image;

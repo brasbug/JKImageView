@@ -20,10 +20,10 @@
     
     NSString *imageContentType = [UIImage jk_contentTypeForImageData:data];
 
-    if ([imageContentType isEqualToString:@"image/gif"]) {
+    if ([[imageContentType lowercaseString] isEqualToString:@"image/gif"]) {
         image = [UIImage jk_animatedGIFWithData:data];
     }
-    else if([imageContentType isEqualToString:@"image/webp"])
+    else if([[imageContentType lowercaseString]isEqualToString:@"image/webp"])
     {
         image = [UIImage jk_imageWithWebPData:data];
     }
