@@ -14,10 +14,8 @@
 //使用Thread 
 - (void)jk_setImage_ThreadWithURL:(NSURL *)url;
 
-
 //使用NSOperation
 - (void)jk_setimage_OperationWithURL:(NSURL *)url;
-
 
 //使用GCD
 - (void)jk_setImage_GCDWithURL:(NSURL *)url;

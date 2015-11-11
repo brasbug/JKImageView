@@ -9,15 +9,15 @@
 #import "JKImageCache.h"
 
 //png图片签名
-static unsigned char kPNGSignatureBytes[8] = {0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A};
-static NSData *kPNGSignatureData = nil;
+static unsigned char jkPNGSignatureBytes[8] = {0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A};
+static NSData *jkPNGSignatureData = nil;
 
-BOOL ImageDataHasPNGPreffix(NSData *data);
+BOOL JKImageDataHasPNGPreffix(NSData *data);
 
-BOOL ImageDataHasPNGPreffix(NSData *data) {
-    NSUInteger pngSignatureLength = [kPNGSignatureData length];
+BOOL JKImageDataHasPNGPreffix(NSData *data) {
+    NSUInteger pngSignatureLength = [jkPNGSignatureData length];
     if ([data length] >= pngSignatureLength) {
-        if ([[data subdataWithRange:NSMakeRange(0, pngSignatureLength)] isEqualToData:kPNGSignatureData]) {
+        if ([[data subdataWithRange:NSMakeRange(0, pngSignatureLength)] isEqualToData:jkPNGSignatureData]) {
             return YES;
         }
     }
@@ -61,7 +61,10 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
 {
     if (self = [super init]) {
         NSString *cacheNameSpace = @"com.Jack.JKImageView";
-        kPNGSignatureData = [NSData dataWithBytes:kPNGSignatureBytes length:8];
+        jkPNGSignatureData = [NSData dataWithBytes:jkPNGSignatureBytes length:8];
+        
+        _memCache = [[NSCache alloc]init];
+        _memCache.name = cacheNameSpace;
         
         _queueCache = [[NSOperationQueue alloc]init];
         [_queueCache setMaxConcurrentOperationCount:1];
@@ -99,8 +102,6 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
     NSInteger cost = JKCacheCostForImage(image);
     [self.memCache setObject:image forKey:key cost:cost];
     
-    
-    
 }
 
 
@@ -113,9 +114,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
  */
 - (UIImage *)imageFromMemoryCacheForKey:(NSString *)key
 {
-    UIImage *image;
-    
-    return image;
+    return [self.memCache objectForKey:key];
 }
 
 
