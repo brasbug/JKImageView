@@ -14,7 +14,7 @@
 
 
 
-- (void)jk_setImageWith:(NSURL *)url;
+- (void)jk_setImageWithURL:(NSURL *)url;
 
 
 @end

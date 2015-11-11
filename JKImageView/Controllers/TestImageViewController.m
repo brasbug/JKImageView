@@ -30,7 +30,10 @@
     _testImageView.contentMode = UIViewContentModeScaleAspectFit;
     _testImageView.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.183];
     [self.view addSubview:_testImageView];
-    [_testImageView jk_setImageWith:[NSURL URLWithString:@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg"]];
+    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
+    
+//    [_testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
+
 //    _testImageView.image = image;
     
 }

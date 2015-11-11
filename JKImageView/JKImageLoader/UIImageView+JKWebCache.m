@@ -44,7 +44,7 @@
 
 #pragma mark-MainMethod
 
-- (void)jk_setImageWith:(NSURL *)url
+- (void)jk_setImageWithURL:(NSURL *)url
 {
     if ([url isKindOfClass:NSString.class] ) {
         url = [NSURL URLWithString:(NSString *)url];
