@@ -17,11 +17,13 @@
 + (UIImage *)jk_imageWithData:(NSData *)data
 {
     UIImage *image;
+    
     NSString *imageContentType = [UIImage jk_contentTypeForImageData:data];
+
     if ([imageContentType isEqualToString:@"image/gif"]) {
         image = [UIImage jk_animatedGIFWithData:data];
     }
-    else if([imageContentType isEqualToString:@"image/Webp"])
+    else if([imageContentType isEqualToString:@"image/webp"])
     {
         image = [UIImage jk_imageWithWebPData:data];
     }

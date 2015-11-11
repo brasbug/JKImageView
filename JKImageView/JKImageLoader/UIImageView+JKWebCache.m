@@ -8,6 +8,7 @@
 
 #import "UIImageView+JKWebCache.h"
 #import "JKImageCache.h"
+#import "UIImage+JKMultiFormat.h"
 
 @implementation UIImageView (JKWebCache)
 
@@ -29,7 +30,7 @@
         @autoreleasepool {
             //在子线程中完成下载
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-            image = [[UIImage alloc]initWithData:data];
+            image = [UIImage jk_imageWithData:data];
 //            [[JKImageCache shareInstance] storeImage:image forKey:url.absoluteString];
             [[JKImageCache shareInstance]storeImage:image imageData:data forKey:url.absoluteString toDisk:YES];
             if(image == nil){
