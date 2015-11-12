@@ -135,17 +135,21 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         
         NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
             NSData *data = imageData;
-            BOOL imageISPNG = YES;
-            if ([imageData length]>=[jkPNGSignatureData length]) {
-                imageISPNG = JKImageDataHasPNGPreffix(imageData);
+            if (!data) {
+                //在这里损失了GIF质量
+                BOOL imageISPNG = YES;
+                if ([imageData length]>=[jkPNGSignatureData length]) {
+                    imageISPNG = JKImageDataHasPNGPreffix(imageData);
+                }
+                if (imageISPNG) {
+                    data = UIImagePNGRepresentation(image);
+                }
+                else
+                {
+                    data = UIImageJPEGRepresentation(image, (CGFloat)1.0);
+                }
             }
-            if (imageISPNG) {
-                data = UIImagePNGRepresentation(image);
-            }
-            else
-            {
-                data = UIImageJPEGRepresentation(image, (CGFloat)1.0);
-            }
+            
             
             
             if (data) {
