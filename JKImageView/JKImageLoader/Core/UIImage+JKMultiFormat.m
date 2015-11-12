@@ -65,7 +65,7 @@
                 return nil;
             }
             
-            NSString *testString = [[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding];
+            NSString *testString = [[[NSString alloc] initWithData:[data subdataWithRange:NSMakeRange(0, 12)] encoding:NSASCIIStringEncoding] uppercaseString];
             if ([testString hasPrefix:@"RIFF"] && [testString hasSuffix:@"WEBP"]) {
                 return @"image/webp";
             }
