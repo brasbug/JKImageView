@@ -214,7 +214,12 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
 - (NSData *)diskImageDataBySearchingAllPathsForKey:(NSString *)key
 {
     NSString * fileNamePath = [self defaultCachePathForKey:key];
+    
+    
     NSData *data = [NSData dataWithContentsOfFile:fileNamePath];
+    
+    
+    
     if (data) {
         return data;
     }

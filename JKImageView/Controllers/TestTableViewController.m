@@ -13,7 +13,7 @@
 
 
 @property (nonatomic, assign) NSInteger listCount;
-
+@property (nonatomic, assign) NSInteger type;
 @end
 
 @implementation TestTableViewController
@@ -32,11 +32,13 @@
     UIBarButtonItem *loadDataButtonItem =[[UIBarButtonItem alloc]initWithCustomView:loadDatabtn];
     self.navigationItem.rightBarButtonItem = loadDataButtonItem;
     
+    
 }
 
 -(void)loadDatabtnPressed
 {
     _listCount = 20;
+    _type++;
     [self.tableView reloadData];
 }
 
@@ -65,13 +67,13 @@
         cell = [[NSBundle mainBundle]loadNibNamed:@"TestTableViewCell" owner:self options:nil].firstObject;
     }
     //@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=bbe8c06043166d223877159c76220945/599e9d3df8dcd10054b2bf8a728b4710b8122fcc.jpg
-    NSInteger type = 1;
+    
     if (indexPath.row%2) {
-        [cell setContentImageUrl:(type)?@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=bbe8c06043166d223877159c76220945/599e9d3df8dcd10054b2bf8a728b4710b8122fcc.jpg"];
+        [cell setContentImageUrl:(_type%2)?@"http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=bbe8c06043166d223877159c76220945/599e9d3df8dcd10054b2bf8a728b4710b8122fcc.jpg"];
     }
     else
     {
-        [cell setContentImageUrl:(type)?@"http://b.hiphotos.baidu.com/zhidao/pic/item/b3fb43166d224f4ae984285b0bf790529822d15d.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=af6a303cd933c895a67e9873e1127397/53f4c9ef76094b360ce15c46a3cc7cd98c109d87.jpg"];
+        [cell setContentImageUrl:(_type%2)?@"http://b.hiphotos.baidu.com/zhidao/pic/item/b3fb43166d224f4ae984285b0bf790529822d15d.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=af6a303cd933c895a67e9873e1127397/53f4c9ef76094b360ce15c46a3cc7cd98c109d87.jpg"];
     }
     return cell;
 }
