@@ -13,20 +13,12 @@
 
 - (void)setContentImageUrl:(NSString *)urlStr
 {
-//    [self.imageViewk jk_setImage_ThreadWithURL:[NSURL URLWithString:urlStr]];
-//    [self.imageViewk jk_setimage_OperationWithURL:[NSURL URLWithString:urlStr]];
-//    [self.imageViewk jk_setImage_GCDWithURL:[NSURL URLWithString:urlStr]];
-//    UIImage *image = [UIImage animatedImageWithImages:@[[UIImage imageNamed:@"loading_fullscreen_anim_01"],[UIImage imageNamed:@"loading_fullscreen_anim_02"],[UIImage imageNamed:@"loading_fullscreen_anim_03"]] duration:1];
+
     
-//    [self.imageView jk_setImageWithURL:[NSURL URLWithString:urlStr] PlaceHolder:nil progress:^(NSInteger receiveSize, NSInteger expecteSize) {
-//        
-//    } completed:^(UIImage *image, NSError *error, NSURL *imageURL, NSData *dataOrigin) {
-//        
-//    }];
-    
+//    [self.imageViewk jk_oldSetImageWithURL:[NSURL URLWithString:urlStr]];
     [self.imageViewk jk_setImageWithURL:[NSURL URLWithString:urlStr]];
-//    [self.imageView jk_getImageWithURL:[NSURL URLWithString:urlStr]];
-//    [self.imageViewk sd_setImageWithURL:[NSURL URLWithString:urlStr]];
+
+    
 }
 
 - (void)awakeFromNib {

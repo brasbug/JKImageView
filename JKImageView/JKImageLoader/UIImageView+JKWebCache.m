@@ -70,7 +70,27 @@
     [queue addOperation:operationblock];
 }
 
-
+- (void)jk_oldSetImageWithURL:(NSURL *)url
+{
+    if ([url isKindOfClass:NSString.class] ) {
+        url = [NSURL URLWithString:(NSString *)url];
+    }
+    if (![url isKindOfClass:NSURL.class]) {
+        url = nil;
+    }
+    if (!url) {
+        return;
+    }
+    //1.创建NSBlockOperation对象
+    __weak __typeof__(self) weakSelf = self;
+    NSBlockOperation *operationblock = [NSBlockOperation blockOperationWithBlock:^{
+        __strong __typeof(self) strongSelf = weakSelf;
+        [strongSelf downLoadImage:url placeHolder:nil];
+    }];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    [queue addOperation:operationblock];
+}
 
 - (void)jk_setImageWithURL:(NSURL *)url
 {
@@ -80,10 +100,7 @@
 
 - (void)jk_setImageWithURL:(NSURL *)url PlaceHolder:(UIImage* )placdHolder
 {
-
-    
     [self jk_setImageWithURL:url PlaceHolder:placdHolder progress:nil completed:nil];
-    
 }
 
 
@@ -114,8 +131,7 @@
 
         if (!wself) return;
         if (image) {
-            wself.image = image;
-            [wself setNeedsDisplay];
+            [wself performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:NO];
         }
         if (completedBlock) {
             completedBlock(image,error,imageURL,dataOrigin);
