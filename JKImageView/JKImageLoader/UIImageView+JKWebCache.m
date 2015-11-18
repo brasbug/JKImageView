@@ -59,7 +59,6 @@
     if (!url) {
         return;
     }
-    
     //1.创建NSBlockOperation对象
     __weak __typeof__(self) weakSelf = self;
     NSBlockOperation *operationblock = [NSBlockOperation blockOperationWithBlock:^{
@@ -71,11 +70,7 @@
     [queue setMaxConcurrentOperationCount:5];
     // 1. 一旦将操作添加到操作队列，操作就会启动
     [queue addOperation:operationblock];
-    
 }
-
-
-
 
 
 @end
