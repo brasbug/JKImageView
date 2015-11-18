@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-
-
+#import "JKImageMarco.h"
 @interface UIImageView (JKWebCache)
 
 
 
 - (void)jk_setImageWithURL:(NSURL *)url;
+
 
 
 @end

@@ -117,6 +117,7 @@
 		049456D11BEB6AC400E0CBDA /* JKImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKImageViewUITests.m; sourceTree = "<group>"; };
 		049456D71BEB6AC400E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageMarco.h; sourceTree = "<group>"; };
 		50DB690ADF9F7397E703B305 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A061A8B1ED240B9DFE8AF99F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE810828170BEFC17A1BA553 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
 				045417781BF0C00D001CC4E4 /* JKImageCache.h */,
 				045417791BF0C00D001CC4E4 /* JKImageCache.m */,
+				04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */,
 			);
 			path = JKImageLoader;
 			sourceTree = "<group>";

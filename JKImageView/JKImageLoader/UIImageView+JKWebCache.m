@@ -10,8 +10,12 @@
 #import "JKImageCache.h"
 #import "UIImage+JKMultiFormat.h"
 
-@implementation UIImageView (JKWebCache)
 
+
+
+
+
+@implementation UIImageView (JKWebCache)
 
 
 -(void)updateUI:(UIImage*) image
@@ -31,7 +35,6 @@
             //在子线程中完成下载
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
             image = [UIImage jk_imageWithData:data];
-//            [[JKImageCache shareInstance] storeImage:image forKey:url.absoluteString];
             [[JKImageCache shareInstance]storeImage:image imageData:data forKey:url.absoluteString toDisk:YES];
             if(image == nil){
                 //这里可以写下载失败方法
@@ -70,8 +73,6 @@
     [queue addOperation:operationblock];
     
 }
-
-
 
 
 
