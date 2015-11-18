@@ -17,6 +17,8 @@
 @property (nonatomic, strong) NSOperationQueue *queue;
 @property (strong, nonatomic, readwrite) JKImageCache *imageCache;
 @property (nonatomic, strong) NSMutableArray *urlArr;
+
+@property (nonatomic, strong) NSMutableDictionary * operationCacheDic;
 @end
 
 
@@ -27,8 +29,7 @@
     if ((self = [super init])) {
         self.imageCache = [JKImageCache shareInstance];
         self.queue = [[NSOperationQueue alloc]init];
-
-        
+        self.operationCacheDic = [NSMutableDictionary dictionary];
         
     }
     return self;
@@ -56,17 +57,23 @@
     }
     else
     {
-        [self.queue addOperation:[[JKWebImageDownloader alloc]initWithURL:url progress:^(NSInteger receiveSize, NSInteger expecteSize) {
+        __weak __typeof(self)wself = self;
+
+       __block JKWebImageDownloader *downloder =[[JKWebImageDownloader alloc]initWithURL:url progress:^(NSInteger receiveSize, NSInteger expecteSize) {
             if (progressBlock) {
                 progressBlock(receiveSize,expecteSize);
             }
         } completed:^(UIImage *image, NSError *error, NSURL *imageURL, NSData *dataOrigin) {
             
-            [[JKImageCache shareInstance]storeImage:image imageData:dataOrigin forKey:url.absoluteString toDisk:YES];
+            [[JKImageCache shareInstance]storeImage:image imageData:dataOrigin forKey:imageURL.absoluteString toDisk:YES];
             if (completedBlock) {
                 completedBlock(image,error,imageURL,dataOrigin);
             }
-        }].opration];
+            [wself.operationCacheDic removeObjectForKey:imageURL.absoluteString];
+        }];
+        [self.queue addOperation:downloder.opration];
+        [self.operationCacheDic setObject:downloder.opration forKey:url.absoluteString];
+        
     }
 }
 

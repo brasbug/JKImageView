@@ -35,7 +35,7 @@
         self.completedBlock = [completedBlock copy];
         self.progressBlock = [progressBlock copy];
         self.url = url;
-        self.request = [[NSMutableURLRequest alloc]initWithURL:url];
+        self.request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
         self.opration = [NSBlockOperation blockOperationWithBlock:^{
             [self startDownload];
         }];
