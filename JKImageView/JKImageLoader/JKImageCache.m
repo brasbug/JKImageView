@@ -149,9 +149,6 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
                     data = UIImageJPEGRepresentation(image, (CGFloat)1.0);
                 }
             }
-            
-            
-            
             if (data) {
                 if (![_fileManager fileExistsAtPath:_diskCachePath]) {
                     [_fileManager createDirectoryAtPath:_diskCachePath withIntermediateDirectories:YES attributes:nil error:NULL];
