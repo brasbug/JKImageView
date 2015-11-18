@@ -80,7 +80,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         //关闭应用的时候会清理过期文件
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(cleanDiskFile)
-                                                     name:UIApplicationWillTerminateNotification
+                                                     name:UIApplicationDidEnterBackgroundNotification
                                                    object:nil];
         
         

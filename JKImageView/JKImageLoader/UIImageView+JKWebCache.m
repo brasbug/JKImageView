@@ -80,4 +80,16 @@
 }
 
 
+
+
+- (void)jk_setImageWithURL:(NSURL *)url
+               PlaceHolder:(UIImage *)placdHolder
+                  progress:(JKWebImageDownloaderProgressBlock)progressBlock
+                 completed:(JKWebImageCompletBlock)completedBlock
+{
+    
+}
+
+
+
 @end

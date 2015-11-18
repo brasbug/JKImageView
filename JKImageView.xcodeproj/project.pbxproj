@@ -149,7 +149,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04331FE31BF30D4900E8DB33 /* Core */ = {
+		04331FE31BF30D4900E8DB33 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */,
@@ -159,6 +159,7 @@
 				04331FEE1BF30E1B00E8DB33 /* UIImage+JKWebp.h */,
 				04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */,
 			);
+			name = Category;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -186,7 +187,7 @@
 		047B28FA1BEC7852008763A1 /* JKImageLoader */ = {
 			isa = PBXGroup;
 			children = (
-				04331FE31BF30D4900E8DB33 /* Core */,
+				04331FE31BF30D4900E8DB33 /* Category */,
 				047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */,
 				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
 				045417781BF0C00D001CC4E4 /* JKImageCache.h */,

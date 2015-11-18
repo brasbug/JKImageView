@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-#define JKCacheMaxAge  3600*24*6
+#define JKCacheMaxAge   3600*24*6
 #define jKMxCacheSize   0
 
 @interface JKImageCache : NSObject
