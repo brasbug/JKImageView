@@ -32,12 +32,10 @@
     [self.view addSubview:_testImageView];
     
 //    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://whosv-images.b0.upaiyun.com/image/image/e594bc73667c001fa3e11a9e44f14d06.JPEG!140x140p"]];
-//    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
-    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] Progress:^(NSInteger receiveSize, NSInteger expecteSize) {
-        
-    } completed:^(UIImage *image, NSError *error, NSURL *imageURL) {
-        
-    }];
+    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
+    
+
+    
 
 //    [_testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
 

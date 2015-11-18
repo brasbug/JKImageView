@@ -77,6 +77,12 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         //把数据写入disk
         _fileManager = [NSFileManager new];
         
+        //关闭应用的时候会清理过期文件
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(cleanDisk)
+                                                     name:UIApplicationWillTerminateNotification
+                                                   object:nil];
+        
         
     }
     
@@ -223,9 +229,87 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
 }
 
 
+- (void)removeFileIntPath:(NSString *)filaPath
+{
+    [self.fileManager removeItemAtPath:filaPath error:NULL];
+}
 
 
 
+- (void)cleanDisk{
+    
+    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+        NSURL *diskCacheURL = [NSURL fileURLWithPath:self.diskCachePath isDirectory:YES];
+        NSArray *resourceKeys = @[NSURLIsDirectoryKey, NSURLContentModificationDateKey, NSURLTotalFileAllocatedSizeKey];
+        
+
+        NSDirectoryEnumerator *fileEnumerator = [_fileManager enumeratorAtURL:diskCacheURL
+                                                   includingPropertiesForKeys:resourceKeys
+                                                                      options:NSDirectoryEnumerationSkipsHiddenFiles
+                                                                 errorHandler:NULL];
+        
+        NSDate *expirationDate = [NSDate dateWithTimeIntervalSinceNow:-JKCacheMaxAge];
+        NSMutableDictionary *cacheFiles = [NSMutableDictionary dictionary];
+        NSUInteger currentCacheSize = 0;
+
+        NSMutableArray *urlsToDelete = [[NSMutableArray alloc] init];
+        for (NSURL *fileURL in fileEnumerator) {
+            NSDictionary *resourceValues = [fileURL resourceValuesForKeys:resourceKeys error:NULL];
+            
+            // Skip directories.
+            if ([resourceValues[NSURLIsDirectoryKey] boolValue]) {
+                continue;
+            }
+            
+            // Remove files that are older than the expiration date;
+            NSDate *modificationDate = resourceValues[NSURLContentModificationDateKey];
+            if ([[modificationDate laterDate:expirationDate] isEqualToDate:expirationDate]) {
+                [urlsToDelete addObject:fileURL];
+                continue;
+            }
+            
+            // Store a reference to this file and account for its total size.
+            NSNumber *totalAllocatedSize = resourceValues[NSURLTotalFileAllocatedSizeKey];
+            currentCacheSize += [totalAllocatedSize unsignedIntegerValue];
+            [cacheFiles setObject:resourceValues forKey:fileURL];
+        }
+        
+        for (NSURL *fileURL in urlsToDelete) {
+            [_fileManager removeItemAtURL:fileURL error:nil];
+        }
+        
+
+        
+        if (jKMxCacheSize > 0 && currentCacheSize > jKMxCacheSize) {
+            // Target half of our maximum cache size for this cleanup pass.
+            const NSUInteger desiredCacheSize = jKMxCacheSize / 2;
+            
+            // Sort the remaining cache files by their last modification time (oldest first).
+            NSArray *sortedFiles = [cacheFiles keysSortedByValueWithOptions:NSSortConcurrent
+                                                            usingComparator:^NSComparisonResult(id obj1, id obj2) {
+                                                                return [obj1[NSURLContentModificationDateKey] compare:obj2[NSURLContentModificationDateKey]];
+                                                            }];
+            
+            // Delete files until we fall below our desired cache size.
+            for (NSURL *fileURL in sortedFiles) {
+                if ([_fileManager removeItemAtURL:fileURL error:nil]) {
+                    NSDictionary *resourceValues = cacheFiles[fileURL];
+                    NSNumber *totalAllocatedSize = resourceValues[NSURLTotalFileAllocatedSizeKey];
+                    currentCacheSize -= [totalAllocatedSize unsignedIntegerValue];
+                    
+                    if (currentCacheSize < desiredCacheSize) {
+                        break;
+                    }
+                }
+            }
+        }
+
+    
+            
+    }];
+    [self.queueCache addOperation:operation];
+ 
+}
 
 
 @end
