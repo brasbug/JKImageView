@@ -18,7 +18,9 @@
 @property (strong, nonatomic, readwrite) JKImageCache *imageCache;
 @property (nonatomic, strong) NSMutableArray *urlArr;
 
-@property (nonatomic, strong) NSMutableDictionary * operationCacheDic;
+@property (nonatomic, strong) NSMutableArray * operationCacheArr;
+
+@property (nonatomic, strong) NSMutableDictionary * downloaderCacheDic;
 @end
 
 
@@ -29,8 +31,8 @@
     if ((self = [super init])) {
         self.imageCache = [JKImageCache shareInstance];
         self.queue = [[NSOperationQueue alloc]init];
-        self.operationCacheDic = [NSMutableDictionary dictionary];
-        
+        self.downloaderCacheDic = [NSMutableDictionary dictionary];
+        self.operationCacheArr = [NSMutableArray array];
     }
     return self;
 }
@@ -45,7 +47,22 @@
     return instance;
 }
 
+- (void)cancellALL
+{
+    for (JKWebImageDownloader *downloder in self.operationCacheArr) {
+        [downloder cancelDownload];
+        [downloder.opration cancel];
+    }
+}
 
+- (void)cancellWithURL:(NSURL *)url
+{
+    if ([self.downloaderCacheDic objectForKey:url.absoluteString]) {
+        JKWebImageDownloader *downloder = [self.downloaderCacheDic objectForKey:url.absoluteString];
+        [downloder cancelDownload];
+        [downloder.opration cancel];
+    }
+}
 
 - (void)downloadImageWithURL:(NSURL *)url
                     progress:(JKWebImageDownloaderProgressBlock )progressBlock
@@ -69,11 +86,14 @@
             if (completedBlock) {
                 completedBlock(image,error,imageURL,dataOrigin);
             }
-            [wself.operationCacheDic removeObjectForKey:imageURL.absoluteString];
+            [wself.downloaderCacheDic removeObjectForKey:imageURL.absoluteString];
+            if ([self.operationCacheArr containsObject:downloder]) {
+                [self.operationCacheArr removeObject:downloder];
+            }
         }];
         [self.queue addOperation:downloder.opration];
-        [self.operationCacheDic setObject:downloder.opration forKey:url.absoluteString];
-        
+        [self.operationCacheArr addObject:downloder];
+        [self.downloaderCacheDic setObject:downloder forKey:url.absoluteString];
     }
 }
 

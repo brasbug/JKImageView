@@ -19,4 +19,7 @@
                     progress:(JKWebImageDownloaderProgressBlock )progressBlock
                    completed:(JKWebImageCompletBlock)completedBlock;
 
+- (void)cancellALL;
+- (void)cancellWithURL:(NSURL *)url;
+
 @end

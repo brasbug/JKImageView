@@ -58,6 +58,11 @@
     [self.cancellableTask resume];
 
 }
+- (void)cancelDownload
+{
+    [self.cancellableTask cancel];
+    self.cancellableTask = nil;
+}
 
 #pragma markNSURLSessionDownLoadDelegate
 

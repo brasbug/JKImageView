@@ -19,4 +19,6 @@
 
 - (void)startDownload;
 
+- (void)cancelDownload;
+
 @end
