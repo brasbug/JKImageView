@@ -35,7 +35,7 @@
     
     UIImage *image = [UIImage animatedImageWithImages:@[[UIImage imageNamed:@"loading_fullscreen_anim_01"],[UIImage imageNamed:@"loading_fullscreen_anim_02"],[UIImage imageNamed:@"loading_fullscreen_anim_03"]] duration:1];
     
-    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] withPlaceHolder:image];
+    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] PlaceHolder:image];
     
 
     

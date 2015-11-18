@@ -51,11 +51,11 @@
 
 - (void)jk_setImageWithURL:(NSURL *)url
 {
-    [self jk_setImageWithURL:url withPlaceHolder:nil];
+    [self jk_setImageWithURL:url PlaceHolder:nil];
 }
 
 
-- (void)jk_setImageWithURL:(NSURL *)url withPlaceHolder:(UIImage* )placdHolder
+- (void)jk_setImageWithURL:(NSURL *)url PlaceHolder:(UIImage* )placdHolder
 {
     if ([url isKindOfClass:NSString.class] ) {
         url = [NSURL URLWithString:(NSString *)url];
