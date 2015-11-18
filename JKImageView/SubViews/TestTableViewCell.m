@@ -16,8 +16,9 @@
 //    [self.imageViewk jk_setImage_ThreadWithURL:[NSURL URLWithString:urlStr]];
 //    [self.imageViewk jk_setimage_OperationWithURL:[NSURL URLWithString:urlStr]];
 //    [self.imageViewk jk_setImage_GCDWithURL:[NSURL URLWithString:urlStr]];
+    UIImage *image = [UIImage animatedImageWithImages:@[[UIImage imageNamed:@"loading_fullscreen_anim_01"],[UIImage imageNamed:@"loading_fullscreen_anim_02"],[UIImage imageNamed:@"loading_fullscreen_anim_03"]] duration:1];
     
-    [self.imageViewk jk_setImageWithURL:[NSURL URLWithString:urlStr]];
+    [self.imageViewk jk_setImageWithURL:[NSURL URLWithString:urlStr]withPlaceHolder:image];
     
 //    [self.imageViewk sd_setImageWithURL:[NSURL URLWithString:urlStr]];
 }

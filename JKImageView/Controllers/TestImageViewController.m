@@ -27,12 +27,15 @@
     
     // Do any additional setup after loading the view.
     _testImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, JKdeviceWidth, JKdeviceHeight)];
-    _testImageView.contentMode = UIViewContentModeScaleAspectFit;
+    _testImageView.contentMode = UIViewContentModeCenter;
     _testImageView.backgroundColor = [UIColor colorWithWhite:0.667 alpha:0.183];
     [self.view addSubview:_testImageView];
     
 //    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://whosv-images.b0.upaiyun.com/image/image/e594bc73667c001fa3e11a9e44f14d06.JPEG!140x140p"]];
-    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
+    
+    UIImage *image = [UIImage animatedImageWithImages:@[[UIImage imageNamed:@"loading_fullscreen_anim_01"],[UIImage imageNamed:@"loading_fullscreen_anim_02"],[UIImage imageNamed:@"loading_fullscreen_anim_03"]] duration:1];
+    
+    [_testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] withPlaceHolder:image];
     
 
     

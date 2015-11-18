@@ -14,6 +14,9 @@
 
 - (void)jk_setImageWithURL:(NSURL *)url;
 
+- (void)jk_setImageWithURL:(NSURL *)url withPlaceHolder:(UIImage* )placdHolder;
+
+
 
 
 @end

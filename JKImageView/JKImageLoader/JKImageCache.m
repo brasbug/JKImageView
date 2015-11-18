@@ -79,7 +79,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         
         //关闭应用的时候会清理过期文件
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(cleanDisk)
+                                                 selector:@selector(cleanDiskFile)
                                                      name:UIApplicationWillTerminateNotification
                                                    object:nil];
         
@@ -236,7 +236,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
 
 
 
-- (void)cleanDisk{
+- (void)cleanDiskFile{
     
     NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
         NSURL *diskCacheURL = [NSURL fileURLWithPath:self.diskCachePath isDirectory:YES];

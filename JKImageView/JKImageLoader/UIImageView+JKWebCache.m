@@ -23,7 +23,7 @@
     self.image = image;
 }
 
-- (void)downLoadImage:(NSURL *)url
+- (void)downLoadImage:(NSURL *)url placeHolder:(UIImage *)placdHolder
 {
     UIImage *image =  [[JKImageCache shareInstance] imageFromDiskCacheForKey:url.absoluteString];
     if (image) {
@@ -32,6 +32,7 @@
     else
     {
         @autoreleasepool {
+            [self performSelectorOnMainThread:@selector(updateUI:) withObject:placdHolder waitUntilDone:YES];
             //在子线程中完成下载
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
             image = [UIImage jk_imageWithData:data];
@@ -50,6 +51,12 @@
 
 - (void)jk_setImageWithURL:(NSURL *)url
 {
+    [self jk_setImageWithURL:url withPlaceHolder:nil];
+}
+
+
+- (void)jk_setImageWithURL:(NSURL *)url withPlaceHolder:(UIImage* )placdHolder
+{
     if ([url isKindOfClass:NSString.class] ) {
         url = [NSURL URLWithString:(NSString *)url];
     }
@@ -63,7 +70,7 @@
     __weak __typeof__(self) weakSelf = self;
     NSBlockOperation *operationblock = [NSBlockOperation blockOperationWithBlock:^{
         __strong __typeof(self) strongSelf = weakSelf;
-        [strongSelf downLoadImage:url];
+        [strongSelf downLoadImage:url placeHolder:placdHolder];
     }];
     
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
