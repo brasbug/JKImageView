@@ -9,7 +9,7 @@
 #import "UIImageView+JKWebCache.h"
 #import "JKImageCache.h"
 #import "UIImage+JKMultiFormat.h"
-
+#import "JKWebImageManager.h"
 
 
 
@@ -27,12 +27,12 @@
 {
     UIImage *image =  [[JKImageCache shareInstance] imageFromDiskCacheForKey:url.absoluteString];
     if (image) {
-        [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:NO];
     }
     else
     {
         @autoreleasepool {
-            [self performSelectorOnMainThread:@selector(updateUI:) withObject:placdHolder waitUntilDone:YES];
+            [self performSelectorOnMainThread:@selector(updateUI:) withObject:placdHolder waitUntilDone:NO];
             //在子线程中完成下载
             NSData *data = [[NSData alloc] initWithContentsOfURL:url];
             image = [UIImage jk_imageWithData:data];
@@ -41,21 +41,14 @@
                 //这里可以写下载失败方法
             }else{
                 //这里写成功回调， 回调到主线程   这个就是所谓的线程间通讯，除了可以更新主线程的数据外，还可以更新其他线程的比如使用用:performSelector:onThread:withObject:waitUntilDone:
-                [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:YES];
+                [self performSelectorOnMainThread:@selector(updateUI:) withObject:image waitUntilDone:NO];
             }
         }
     }
 }
 
 #pragma mark-MainMethod
-
-- (void)jk_setImageWithURL:(NSURL *)url
-{
-    [self jk_setImageWithURL:url PlaceHolder:nil];
-}
-
-
-- (void)jk_setImageWithURL:(NSURL *)url PlaceHolder:(UIImage* )placdHolder
+- (void)jk_getImageWithURL:(NSURL *)url
 {
     if ([url isKindOfClass:NSString.class] ) {
         url = [NSURL URLWithString:(NSString *)url];
@@ -70,13 +63,27 @@
     __weak __typeof__(self) weakSelf = self;
     NSBlockOperation *operationblock = [NSBlockOperation blockOperationWithBlock:^{
         __strong __typeof(self) strongSelf = weakSelf;
-        [strongSelf downLoadImage:url placeHolder:placdHolder];
+        [strongSelf downLoadImage:url placeHolder:nil];
     }];
     
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
-    [queue setMaxConcurrentOperationCount:5];
-    // 1. 一旦将操作添加到操作队列，操作就会启动
     [queue addOperation:operationblock];
+}
+
+
+
+- (void)jk_setImageWithURL:(NSURL *)url
+{
+    [self jk_setImageWithURL:url PlaceHolder:nil progress:nil completed:nil];
+}
+
+
+- (void)jk_setImageWithURL:(NSURL *)url PlaceHolder:(UIImage* )placdHolder
+{
+
+    
+    [self jk_setImageWithURL:url PlaceHolder:placdHolder progress:nil completed:nil];
+    
 }
 
 
@@ -88,6 +95,32 @@
                  completed:(JKWebImageCompletBlock)completedBlock
 {
     
+    if ([url isKindOfClass:NSString.class] ) {
+        url = [NSURL URLWithString:(NSString *)url];
+    }
+    if (![url isKindOfClass:NSURL.class]) {
+        url = nil;
+    }
+    if (!url) {
+        return;
+    }
+    __weak __typeof(self)wself = self;
+    [[JKWebImageManager sharedManager]downloadImageWithURL:url progress:^(NSInteger receiveSize, NSInteger expecteSize) {
+        
+        if (progressBlock) {
+            progressBlock(receiveSize,expecteSize);
+        }
+    }  completed:^(UIImage *image, NSError *error, NSURL *imageURL,NSData *dataOrigin) {
+
+        if (!wself) return;
+        if (image) {
+            wself.image = image;
+            [wself setNeedsDisplay];
+        }
+        if (completedBlock) {
+            completedBlock(image,error,imageURL,dataOrigin);
+        }
+    }];
 }
 
 

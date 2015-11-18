@@ -11,7 +11,10 @@
 #import "TestGCDMethod.h"
 #import "TestOperation.h"
 #import "TestObjc_setAssociatedObject.h"
+#import "JKWebImageDownloader.h"
+#import "JKWebImageManager.h"
 
+#import "UIImageView+JKWebCache.h"
 
 
 @interface ViewController ()
@@ -38,6 +41,31 @@
 
 }
 
+
+
+- (IBAction)JKTestBtnPressed:(id)sender
+{
+    [self.testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"]];
+//    [self.testImageView jk_setImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] PlaceHolder:nil progress:^(NSInteger receiveSize, NSInteger expecteSize) {
+//        
+//    } completed:^(UIImage *image, NSError *error, NSURL *imageURL,NSData *dataOrigin) {
+//        
+//    }];
+    
+//    [[JKWebImageManager sharedManager]downloadImageWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] progress:^(NSInteger receiveSize, NSInteger expecteSize) {
+//        
+//    } completed:^(UIImage *image, NSError *error, NSURL *imageURL) {
+//        
+//    }];
+    
+    //http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif
+    //http://b.zol-img.com.cn/desk/bizhi/image/4/1920x1200/1384480949246.jpg
+//    [[[JKWebImageDownloader alloc]initWithURL:[NSURL URLWithString:@"http://s1.dwstatic.com/group1/M00/18/23/1244a21b95f70cb20db2489fe69fb3bb.gif"] progress:^(NSInteger receiveSize, NSInteger expecteSize) {
+//        
+//    } completed:^(UIImage *image, NSError *error, NSURL *imageURL) {
+//    
+//    }] startDownload];
+}
 
 
 - (IBAction)testNSOperationBtnPressed:(id)sender {
@@ -75,6 +103,8 @@
     
     
 }
+
+
 
 
 

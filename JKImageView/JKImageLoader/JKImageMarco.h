@@ -10,7 +10,7 @@
 #define JKImageMarco_h
 
 
-typedef void(^JKWebImageCompletBlock)(UIImage *image, NSError *error, NSURL * imageURL);
+typedef void(^JKWebImageCompletBlock)(UIImage *image, NSError *error, NSURL * imageURL ,NSData *dataOrigin);
 typedef void(^JKWebImageDownloaderProgressBlock)(NSInteger  receiveSize, NSInteger expecteSize);
 
 

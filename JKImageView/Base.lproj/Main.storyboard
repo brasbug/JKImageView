@@ -87,6 +87,14 @@
                                     <action selector="nomalTestBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="pxo-lF-iAS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80A-s3-gQg">
+                                <rect key="frame" x="20" y="278" width="127" height="30"/>
+                                <animations/>
+                                <state key="normal" title="JKTest"/>
+                                <connections>
+                                    <action selector="JKTestBtnPressed:" destination="8Br-ro-Xud" eventType="touchUpInside" id="dLa-IP-rmU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

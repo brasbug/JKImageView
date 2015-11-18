@@ -70,7 +70,7 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
         _memCache.name = cacheNameSpace;
         
         _queueCache = [[NSOperationQueue alloc]init];
-        [_queueCache setMaxConcurrentOperationCount:1];
+        [_queueCache setMaxConcurrentOperationCount:1]; 
         
         _diskCachePath = [self makeDiskCachePath:cacheNameSpace];
         
@@ -303,9 +303,6 @@ FOUNDATION_STATIC_INLINE NSUInteger JKCacheCostForImage(UIImage *image) {
                 }
             }
         }
-
-    
-            
     }];
     [self.queueCache addOperation:operation];
  

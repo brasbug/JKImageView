@@ -54,6 +54,12 @@
 		049456C01BEB6AC300E0CBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049456BE1BEB6AC300E0CBDA /* LaunchScreen.storyboard */; };
 		049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456CA1BEB6AC300E0CBDA /* JKImageViewTests.m */; };
 		049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */; };
+		04AE8F701BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
+		04AE8F711BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
+		04AE8F721BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
+		04AE8F751BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
+		04AE8F761BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
+		04AE8F771BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
 		74D6729D50D72CB2EE6BFE2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061A8B1ED240B9DFE8AF99F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +124,10 @@
 		049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKImageViewUITests.m; sourceTree = "<group>"; };
 		049456D71BEB6AC400E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageMarco.h; sourceTree = "<group>"; };
+		04AE8F6E1BFC63B1000A172A /* JKWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageManager.h; sourceTree = "<group>"; };
+		04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageManager.m; sourceTree = "<group>"; };
+		04AE8F731BFC6A63000A172A /* JKWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageDownloader.h; sourceTree = "<group>"; };
+		04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageDownloader.m; sourceTree = "<group>"; };
 		50DB690ADF9F7397E703B305 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A061A8B1ED240B9DFE8AF99F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE810828170BEFC17A1BA553 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +203,10 @@
 				045417781BF0C00D001CC4E4 /* JKImageCache.h */,
 				045417791BF0C00D001CC4E4 /* JKImageCache.m */,
 				04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */,
+				04AE8F6E1BFC63B1000A172A /* JKWebImageManager.h */,
+				04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */,
+				04AE8F731BFC6A63000A172A /* JKWebImageDownloader.h */,
+				04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */,
 			);
 			path = JKImageLoader;
 			sourceTree = "<group>";
@@ -497,7 +511,9 @@
 				04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */,
 				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
+				04AE8F751BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
 				043509A51BF0411400CE9924 /* TestOperation.m in Sources */,
+				04AE8F701BFC63B1000A172A /* JKWebImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +532,9 @@
 				045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				04331FEC1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
 				04331FF11BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
+				04AE8F711BFC63B1000A172A /* JKWebImageManager.m in Sources */,
 				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
+				04AE8F761BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
 				0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +554,9 @@
 				045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				04331FED1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
 				04331FF21BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
+				04AE8F721BFC63B1000A172A /* JKWebImageManager.m in Sources */,
 				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
+				04AE8F771BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
 				0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
