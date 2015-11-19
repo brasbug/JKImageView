@@ -16,7 +16,7 @@ static char overviewKey;
 - (void)testAssociatedObject
 {
     
-    //为了演示的目的，这里使用initWithFormat:来确保字符串可以被销毁
+    //为了演示的目的，这里使用initWithFormat:
     NSURL *url = [NSURL URLWithString:@"asdfasd"];
     objc_setAssociatedObject(self, &overviewKey, url, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
   
