@@ -15,6 +15,7 @@
 #import "JKWebImageManager.h"
 
 #import "UIImageView+JKWebCache.h"
+#import "AFNetworking.h"
 
 
 @interface ViewController ()
@@ -86,6 +87,87 @@
 }
 
 
+- (IBAction)uploadTest:(id)sender {
+
+    
+//    NSString *service = [NSString stringWithFormat:@"%@post%@",path,[params description]];
+//
+//    
+//    
+//    AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+// 
+//    
+//    NSError *err;
+//    
+//    NSMutableURLRequest * request = [serializer multipartFormRequestWithMethod:@"POST" URLString:path parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+//        for (int i = 0; i<imagesData.count; i++)
+//        {
+//            NSData *imageData =[imagesData objectAtIndex:i];
+//            NSString *tempFileName = [NSString stringWithFormat:@"photo%d.JPEG",i];
+//            NSInteger count = i;
+//            if (count >= imageKeys.count) {
+//                
+//                count = imageKeys.count-1;
+//            }
+//            NSString *imageName = [imageKeys objectAtIndex:count];
+//            
+//            if ([imageData length]>0)
+//            {
+//                [formData appendPartWithFileData:imageData name:imageName fileName:tempFileName mimeType:@"image/jpeg"];
+//            }
+//        }
+//        
+//        
+//    } error:&err];
+//    
+//    
+//    
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    AFHTTPRequestOperation *operation =
+//    [manager HTTPRequestOperationWithRequest:request
+//                                     success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//                                         [self removeServiceName:service];
+//                                         successBlock(responseObject);
+//                                     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//                                         NSLog(@"%@ %@",operation,error);
+//                                         [self removeServiceName:service];
+//                                         
+//                                         if (error.userInfo) {
+//                                             if ([error.userInfo objectForKey:@"NSLocalizedDescription"]) {
+//                                                 NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:error.userInfo];
+//                                                 [dic setValue:[error.userInfo objectForKey:@"NSLocalizedDescription"] forKey:@"message"];
+//                                                 [dic setValue:@"10000502" forKey:@"code"];
+//                                                 
+//                                                 failureBlock(dic);
+//                                             }else
+//                                             {
+//                                                 failureBlock(@{@"message":CustomLocalizedString(@"checkNetworking", @""),@"code":@"99999"});
+//                                             }
+//                                         }
+//                                         else
+//                                         {
+//                                             //TODO
+//                                             failureBlock(@{@"message":@"未定义错误",@"code":@"A001"});
+//                                         }
+//                                     }];
+//    
+//    // 4. Set the progress block of the operation.
+//    [operation setUploadProgressBlock:^(NSUInteger __unused bytesWritten,
+//                                        long long totalBytesWritten,
+//                                        long long totalBytesExpectedToWrite) {
+//        //                NSLog(@"Wrote %lld/%lld", totalBytesWritten, totalBytesExpectedToWrite);
+//        progresBlock(bytesWritten,totalBytesWritten,totalBytesExpectedToWrite);
+//        
+//    }];
+//    
+//    // 5. Begin!
+//    [operation start];
+    
+    
+    
+    
+    
+}
 
 - (IBAction)testGCDBtnPressed:(id)sender
 {

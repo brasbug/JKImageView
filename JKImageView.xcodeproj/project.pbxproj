@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C4B8C1C1685B700F9CD9F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040C4B8B1C1685B700F9CD9F /* WebKit.framework */; };
 		04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
 		04331FE71BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
 		04331FE81BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
@@ -81,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040C4B8B1C1685B700F9CD9F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKMultiFormat.h"; sourceTree = "<group>"; };
 		04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKMultiFormat.m"; sourceTree = "<group>"; };
 		04331FE91BF30E0D00E8DB33 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040C4B8C1C1685B700F9CD9F /* WebKit.framework in Frameworks */,
 				74D6729D50D72CB2EE6BFE2A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +310,7 @@
 		DAB277E667C9CE715DE9CC20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				040C4B8B1C1685B700F9CD9F /* WebKit.framework */,
 				A061A8B1ED240B9DFE8AF99F /* libPods.a */,
 			);
 			name = Frameworks;
@@ -382,7 +386,6 @@
 				TargetAttributes = {
 					049456AC1BEB6AC300E0CBDA = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = BRH78G7TM3;
 					};
 					049456C51BEB6AC300E0CBDA = {
 						CreatedOnToolsVersion = 7.1;
@@ -687,7 +690,7 @@
 				INFOPLIST_FILE = JKImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testsing.sign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -704,7 +707,7 @@
 				INFOPLIST_FILE = JKImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testsing.sign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

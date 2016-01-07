@@ -37,7 +37,7 @@
 
 -(void)loadDatabtnPressed
 {
-    _listCount = 20;
+    _listCount = 30;
     _type++;
     [self.tableView reloadData];
 }
@@ -74,6 +74,13 @@
     {
         [cell setContentImageUrl:(_type%2)?@"http://b.hiphotos.baidu.com/zhidao/pic/item/b3fb43166d224f4ae984285b0bf790529822d15d.jpg":@"http://imgsrc.baidu.com/forum/w%3D580/sign=af6a303cd933c895a67e9873e1127397/53f4c9ef76094b360ce15c46a3cc7cd98c109d87.jpg"];
     }
+//    cell.textLabel.text = @"";
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"1";
+
+    }
+    
+    
     return cell;
 }
 

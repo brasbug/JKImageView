@@ -16,7 +16,7 @@
 
     
 //    [self.imageViewk jk_oldSetImageWithURL:[NSURL URLWithString:urlStr]];
-    [self.imageViewk jk_setImageWithURL:[NSURL URLWithString:urlStr]];
+    [self.imageViewk sd_setImageWithURL:[NSURL URLWithString:urlStr]];
 
     
 }
