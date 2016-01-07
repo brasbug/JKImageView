@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     blalalalablalalalablalalalablalalalablalalalablalalalablalalalablalalala
                    DESC               
-  s.dependency 'libwebp', '~>0.4.3'
+  s.libraries = 'z', 'sqlite3'
+  s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'AssetsLibrary', 'ImageIO', 'Accelerate', 'MobileCoreServices'
+  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
              
 end
