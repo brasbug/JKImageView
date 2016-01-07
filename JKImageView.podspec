@@ -8,9 +8,8 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.flywithme.top'
   s.authors   = { 'Jack' => '369495368@qq.com' }
   s.source   = { :git => 'https://github.com/brasbug/JKImageView.git'}
-
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.description = 'blablabla'
-
   s.source_files = 'JKImageView/JKImageLoader/*.{h,m}'
   s.framework    = 'UIKit'
   s.requires_arc = true
