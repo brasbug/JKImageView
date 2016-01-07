@@ -7,3 +7,5 @@ pod 'AFNetworking', '~> 2.5.3'
 
 
 pod 'SDWebImage'  , :git =>'https://github.com/brasbug/SDWebImage.git'
+
+pod 'JKImageView',:podspec=>'https://github.com/brasbug/JKImageView/blob/master/JKImageView.podspec'

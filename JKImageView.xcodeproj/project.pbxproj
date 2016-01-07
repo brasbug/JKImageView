@@ -8,27 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		040C4B8C1C1685B700F9CD9F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040C4B8B1C1685B700F9CD9F /* WebKit.framework */; };
-		04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
-		04331FE71BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
-		04331FE81BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */; };
-		04331FEB1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
-		04331FEC1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
-		04331FED1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */; };
-		04331FF01BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
-		04331FF11BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
-		04331FF21BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */; };
 		043509A51BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		043509A61BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		043509A71BF0411400CE9924 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 043509A41BF0411400CE9924 /* TestOperation.m */; };
 		04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
 		04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
 		04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04391A421BEC4C92004897A2 /* TestImageViewController.m */; };
+		043A103C1C3E53A700646E8F /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A102E1C3E53A700646E8F /* JKImageCache.m */; };
+		043A103D1C3E53A700646E8F /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A102E1C3E53A700646E8F /* JKImageCache.m */; };
+		043A103E1C3E53A700646E8F /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A102E1C3E53A700646E8F /* JKImageCache.m */; };
+		043A103F1C3E53A700646E8F /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10311C3E53A700646E8F /* JKWebImageDownloader.m */; };
+		043A10401C3E53A700646E8F /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10311C3E53A700646E8F /* JKWebImageDownloader.m */; };
+		043A10411C3E53A700646E8F /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10311C3E53A700646E8F /* JKWebImageDownloader.m */; };
+		043A10421C3E53A700646E8F /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10331C3E53A700646E8F /* JKWebImageManager.m */; };
+		043A10431C3E53A700646E8F /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10331C3E53A700646E8F /* JKWebImageManager.m */; };
+		043A10441C3E53A700646E8F /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10331C3E53A700646E8F /* JKWebImageManager.m */; };
+		043A10451C3E53A700646E8F /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10351C3E53A700646E8F /* UIImage+JKGIF.m */; };
+		043A10461C3E53A700646E8F /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10351C3E53A700646E8F /* UIImage+JKGIF.m */; };
+		043A10471C3E53A700646E8F /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10351C3E53A700646E8F /* UIImage+JKGIF.m */; };
+		043A10481C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10371C3E53A700646E8F /* UIImage+JKMultiFormat.m */; };
+		043A10491C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10371C3E53A700646E8F /* UIImage+JKMultiFormat.m */; };
+		043A104A1C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10371C3E53A700646E8F /* UIImage+JKMultiFormat.m */; };
+		043A104B1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10391C3E53A700646E8F /* UIImage+JKWebp.m */; };
+		043A104C1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10391C3E53A700646E8F /* UIImage+JKWebp.m */; };
+		043A104D1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A10391C3E53A700646E8F /* UIImage+JKWebp.m */; };
+		043A104E1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
+		043A104F1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
+		043A10501C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
 		045417751BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
-		0454177A1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
-		0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
-		0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417791BF0C00D001CC4E4 /* JKImageCache.m */; };
 		0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
 		0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
 		0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470CA741BEDF0A700287A09 /* TestGCDMethod.m */; };
@@ -41,9 +50,6 @@
 		047B28F71BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
 		047B28F81BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
 		047B28F91BEC504F008763A1 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047B28F31BEC504F008763A1 /* TestTableViewCell.xib */; };
-		047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
-		047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
-		047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */; };
 		047B29081BECA104008763A1 /* TestSyncThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29071BECA104008763A1 /* TestSyncThread.m */; };
 		047B29091BECA104008763A1 /* TestSyncThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29071BECA104008763A1 /* TestSyncThread.m */; };
 		047B290A1BECA104008763A1 /* TestSyncThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B29071BECA104008763A1 /* TestSyncThread.m */; };
@@ -55,12 +61,6 @@
 		049456C01BEB6AC300E0CBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049456BE1BEB6AC300E0CBDA /* LaunchScreen.storyboard */; };
 		049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456CA1BEB6AC300E0CBDA /* JKImageViewTests.m */; };
 		049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */; };
-		04AE8F701BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
-		04AE8F711BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
-		04AE8F721BFC63B1000A172A /* JKWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */; };
-		04AE8F751BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
-		04AE8F761BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
-		04AE8F771BFC6A63000A172A /* JKWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */; };
 		74D6729D50D72CB2EE6BFE2A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A061A8B1ED240B9DFE8AF99F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -83,21 +83,28 @@
 
 /* Begin PBXFileReference section */
 		040C4B8B1C1685B700F9CD9F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKMultiFormat.h"; sourceTree = "<group>"; };
-		04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKMultiFormat.m"; sourceTree = "<group>"; };
-		04331FE91BF30E0D00E8DB33 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
-		04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
-		04331FEE1BF30E1B00E8DB33 /* UIImage+JKWebp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWebp.h"; sourceTree = "<group>"; };
-		04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWebp.m"; sourceTree = "<group>"; };
 		043509A31BF0411400CE9924 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
 		043509A41BF0411400CE9924 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		04391A3A1BEC4A32004897A2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04391A411BEC4C92004897A2 /* TestImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImageViewController.h; sourceTree = "<group>"; };
 		04391A421BEC4C92004897A2 /* TestImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImageViewController.m; sourceTree = "<group>"; };
+		043A102D1C3E53A700646E8F /* JKImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageCache.h; sourceTree = "<group>"; };
+		043A102E1C3E53A700646E8F /* JKImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKImageCache.m; sourceTree = "<group>"; };
+		043A102F1C3E53A700646E8F /* JKImageMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageMarco.h; sourceTree = "<group>"; };
+		043A10301C3E53A700646E8F /* JKWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageDownloader.h; sourceTree = "<group>"; };
+		043A10311C3E53A700646E8F /* JKWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageDownloader.m; sourceTree = "<group>"; };
+		043A10321C3E53A700646E8F /* JKWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageManager.h; sourceTree = "<group>"; };
+		043A10331C3E53A700646E8F /* JKWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageManager.m; sourceTree = "<group>"; };
+		043A10341C3E53A700646E8F /* UIImage+JKGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
+		043A10351C3E53A700646E8F /* UIImage+JKGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
+		043A10361C3E53A700646E8F /* UIImage+JKMultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKMultiFormat.h"; sourceTree = "<group>"; };
+		043A10371C3E53A700646E8F /* UIImage+JKMultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKMultiFormat.m"; sourceTree = "<group>"; };
+		043A10381C3E53A700646E8F /* UIImage+JKWebp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKWebp.h"; sourceTree = "<group>"; };
+		043A10391C3E53A700646E8F /* UIImage+JKWebp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWebp.m"; sourceTree = "<group>"; };
+		043A103A1C3E53A700646E8F /* UIImageView+JKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKWebCache.h"; sourceTree = "<group>"; };
+		043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKWebCache.m"; sourceTree = "<group>"; };
 		045417731BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc_setAssociatedObject.h; sourceTree = "<group>"; };
 		045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjc_setAssociatedObject.m; sourceTree = "<group>"; };
-		045417781BF0C00D001CC4E4 /* JKImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageCache.h; sourceTree = "<group>"; };
-		045417791BF0C00D001CC4E4 /* JKImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKImageCache.m; sourceTree = "<group>"; };
 		0470CA731BEDF0A700287A09 /* TestGCDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDMethod.h; sourceTree = "<group>"; };
 		0470CA741BEDF0A700287A09 /* TestGCDMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDMethod.m; sourceTree = "<group>"; };
 		047B28EC1BEC5040008763A1 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
@@ -105,8 +112,6 @@
 		047B28F11BEC504F008763A1 /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
 		047B28F21BEC504F008763A1 /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
 		047B28F31BEC504F008763A1 /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
-		047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKWebCache.h"; sourceTree = "<group>"; };
-		047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKWebCache.m"; sourceTree = "<group>"; };
 		047B29061BECA104008763A1 /* TestSyncThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSyncThread.h; sourceTree = "<group>"; };
 		047B29071BECA104008763A1 /* TestSyncThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSyncThread.m; sourceTree = "<group>"; };
 		049456AD1BEB6AC300E0CBDA /* JKImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +130,6 @@
 		049456D11BEB6AC400E0CBDA /* JKImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049456D51BEB6AC400E0CBDA /* JKImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKImageViewUITests.m; sourceTree = "<group>"; };
 		049456D71BEB6AC400E0CBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKImageMarco.h; sourceTree = "<group>"; };
-		04AE8F6E1BFC63B1000A172A /* JKWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageManager.h; sourceTree = "<group>"; };
-		04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageManager.m; sourceTree = "<group>"; };
-		04AE8F731BFC6A63000A172A /* JKWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKWebImageDownloader.h; sourceTree = "<group>"; };
-		04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKWebImageDownloader.m; sourceTree = "<group>"; };
 		50DB690ADF9F7397E703B305 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A061A8B1ED240B9DFE8AF99F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE810828170BEFC17A1BA553 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,20 +162,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04331FE31BF30D4900E8DB33 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				04331FE41BF30DAD00E8DB33 /* UIImage+JKMultiFormat.h */,
-				04331FE51BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m */,
-				04331FE91BF30E0D00E8DB33 /* UIImage+JKGIF.h */,
-				04331FEA1BF30E0D00E8DB33 /* UIImage+JKGIF.m */,
-				04331FEE1BF30E1B00E8DB33 /* UIImage+JKWebp.h */,
-				04331FEF1BF30E1B00E8DB33 /* UIImage+JKWebp.m */,
-			);
-			name = Category;
-			path = Core;
-			sourceTree = "<group>";
-		};
 		04391A401BEC4C7F004897A2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +173,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		043A102C1C3E53A700646E8F /* JKWebImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				043A102D1C3E53A700646E8F /* JKImageCache.h */,
+				043A102E1C3E53A700646E8F /* JKImageCache.m */,
+				043A102F1C3E53A700646E8F /* JKImageMarco.h */,
+				043A10301C3E53A700646E8F /* JKWebImageDownloader.h */,
+				043A10311C3E53A700646E8F /* JKWebImageDownloader.m */,
+				043A10321C3E53A700646E8F /* JKWebImageManager.h */,
+				043A10331C3E53A700646E8F /* JKWebImageManager.m */,
+				043A10341C3E53A700646E8F /* UIImage+JKGIF.h */,
+				043A10351C3E53A700646E8F /* UIImage+JKGIF.m */,
+				043A10361C3E53A700646E8F /* UIImage+JKMultiFormat.h */,
+				043A10371C3E53A700646E8F /* UIImage+JKMultiFormat.m */,
+				043A10381C3E53A700646E8F /* UIImage+JKWebp.h */,
+				043A10391C3E53A700646E8F /* UIImage+JKWebp.m */,
+				043A103A1C3E53A700646E8F /* UIImageView+JKWebCache.h */,
+				043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */,
+			);
+			path = JKWebImageLoader;
+			sourceTree = SOURCE_ROOT;
+		};
 		047B28EB1BEC5028008763A1 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,23 +203,6 @@
 				047B28F31BEC504F008763A1 /* TestTableViewCell.xib */,
 			);
 			path = SubViews;
-			sourceTree = "<group>";
-		};
-		047B28FA1BEC7852008763A1 /* JKImageLoader */ = {
-			isa = PBXGroup;
-			children = (
-				04331FE31BF30D4900E8DB33 /* Category */,
-				047B29001BEC78DC008763A1 /* UIImageView+JKWebCache.h */,
-				047B29011BEC78DC008763A1 /* UIImageView+JKWebCache.m */,
-				045417781BF0C00D001CC4E4 /* JKImageCache.h */,
-				045417791BF0C00D001CC4E4 /* JKImageCache.m */,
-				04AE8F6D1BFC2B83000A172A /* JKImageMarco.h */,
-				04AE8F6E1BFC63B1000A172A /* JKWebImageManager.h */,
-				04AE8F6F1BFC63B1000A172A /* JKWebImageManager.m */,
-				04AE8F731BFC6A63000A172A /* JKWebImageDownloader.h */,
-				04AE8F741BFC6A63000A172A /* JKWebImageDownloader.m */,
-			);
-			path = JKImageLoader;
 			sourceTree = "<group>";
 		};
 		047B29051BEC9F2C008763A1 /* CustomMethod */ = {
@@ -254,8 +245,8 @@
 		049456AF1BEB6AC300E0CBDA /* JKImageView */ = {
 			isa = PBXGroup;
 			children = (
+				043A102C1C3E53A700646E8F /* JKWebImageLoader */,
 				047B29051BEC9F2C008763A1 /* CustomMethod */,
-				047B28FA1BEC7852008763A1 /* JKImageLoader */,
 				047B28EB1BEC5028008763A1 /* SubViews */,
 				04391A401BEC4C7F004897A2 /* Controllers */,
 				049456B31BEB6AC300E0CBDA /* AppDelegate.h */,
@@ -505,18 +496,18 @@
 				045417751BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
 				047B28F41BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				049456B51BEB6AC300E0CBDA /* AppDelegate.m in Sources */,
-				0454177A1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
-				04331FF01BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
 				0470CA751BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
-				04331FEB1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
+				043A10481C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */,
 				047B28EE1BEC5040008763A1 /* TestTableViewController.m in Sources */,
-				047B29021BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
-				04331FE61BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
+				043A10451C3E53A700646E8F /* UIImage+JKGIF.m in Sources */,
 				04391A431BEC4C92004897A2 /* TestImageViewController.m in Sources */,
+				043A104E1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */,
+				043A104B1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */,
 				049456B21BEB6AC300E0CBDA /* main.m in Sources */,
-				04AE8F751BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
 				043509A51BF0411400CE9924 /* TestOperation.m in Sources */,
-				04AE8F701BFC63B1000A172A /* JKWebImageManager.m in Sources */,
+				043A103F1C3E53A700646E8F /* JKWebImageDownloader.m in Sources */,
+				043A10421C3E53A700646E8F /* JKWebImageManager.m in Sources */,
+				043A103C1C3E53A700646E8F /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,20 +516,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0470CA761BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
-				04331FE71BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				047B28EF1BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F51BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				043509A61BF0411400CE9924 /* TestOperation.m in Sources */,
 				047B29091BECA104008763A1 /* TestSyncThread.m in Sources */,
-				047B29031BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
+				043A103D1C3E53A700646E8F /* JKImageCache.m in Sources */,
 				04391A441BEC4C92004897A2 /* TestImageViewController.m in Sources */,
+				043A10431C3E53A700646E8F /* JKWebImageManager.m in Sources */,
+				043A104C1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */,
 				045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
-				04331FEC1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
-				04331FF11BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
-				04AE8F711BFC63B1000A172A /* JKWebImageManager.m in Sources */,
+				043A10491C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */,
+				043A10461C3E53A700646E8F /* UIImage+JKGIF.m in Sources */,
+				043A104F1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */,
+				043A10401C3E53A700646E8F /* JKWebImageDownloader.m in Sources */,
 				049456CB1BEB6AC300E0CBDA /* JKImageViewTests.m in Sources */,
-				04AE8F761BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
-				0454177B1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,20 +538,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0470CA771BEDF0A700287A09 /* TestGCDMethod.m in Sources */,
-				04331FE81BF30DAD00E8DB33 /* UIImage+JKMultiFormat.m in Sources */,
 				047B28F01BEC5040008763A1 /* TestTableViewController.m in Sources */,
 				047B28F61BEC504F008763A1 /* TestTableViewCell.m in Sources */,
 				043509A71BF0411400CE9924 /* TestOperation.m in Sources */,
 				047B290A1BECA104008763A1 /* TestSyncThread.m in Sources */,
-				047B29041BEC78DC008763A1 /* UIImageView+JKWebCache.m in Sources */,
+				043A103E1C3E53A700646E8F /* JKImageCache.m in Sources */,
 				04391A451BEC4C92004897A2 /* TestImageViewController.m in Sources */,
+				043A10441C3E53A700646E8F /* JKWebImageManager.m in Sources */,
+				043A104D1C3E53A700646E8F /* UIImage+JKWebp.m in Sources */,
 				045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */,
-				04331FED1BF30E0D00E8DB33 /* UIImage+JKGIF.m in Sources */,
-				04331FF21BF30E1B00E8DB33 /* UIImage+JKWebp.m in Sources */,
-				04AE8F721BFC63B1000A172A /* JKWebImageManager.m in Sources */,
+				043A104A1C3E53A700646E8F /* UIImage+JKMultiFormat.m in Sources */,
+				043A10471C3E53A700646E8F /* UIImage+JKGIF.m in Sources */,
+				043A10501C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */,
+				043A10411C3E53A700646E8F /* JKWebImageDownloader.m in Sources */,
 				049456D61BEB6AC400E0CBDA /* JKImageViewUITests.m in Sources */,
-				04AE8F771BFC6A63000A172A /* JKWebImageDownloader.m in Sources */,
-				0454177C1BF0C00D001CC4E4 /* JKImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
