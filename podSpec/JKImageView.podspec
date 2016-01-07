@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.description  = <<-DESC
                     blalalalablalalalablalalalablalalalablalalalablalalalablalalalablalalala
-                   DESC
-                   
+                   DESC               
+  s.dependency 'libwebp', '~>0.4.3'
+             
 end
