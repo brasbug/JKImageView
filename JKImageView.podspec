@@ -1,21 +1,17 @@
+
 Pod::Spec.new do |s|
+  s.name     = 'JKImageView'
+  s.version  = '0.0.1'
+  s.ios.deployment_target = '7.0'
+  s.license  = 'MIT'
+  s.summary  = 'imageNet for your iOS app.'
+  s.homepage = 'http://www.flywithme.top'
+  s.authors   = { 'Jack' => '369495368@qq.com' }
+  s.source   = { :git => 'https://github.com/brasbug/JKImageView.git'}
 
-  s.name         = "JKImageView"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of JKImageView."
+  s.description = 'blablabla'
 
-  s.homepage     = "http://www.flywithme.top"
-  s.license      = "MIT"
-
-  s.author             = { "Jack" => "erfeng.cheng@dianping.com" }
-
-
-  s.platform     = :ios
-  s.platform     = :ios, "8.0"
-
-  s.source       = { :git => "https://github.com/brasbug/SDWebImage.git", :tag => "0.0.1" }
-  s.source_files  = "JKImageView/*.{h,m}"
-  s.framework  = "UIKit"
-
-
+  s.source_files = 'JKImageView/JKImageLoader/*.{h,m}'
+  s.framework    = 'UIKit'
+  s.requires_arc = true
 end
