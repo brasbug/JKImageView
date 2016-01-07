@@ -3,7 +3,6 @@ Pod::Spec.new do |s|
   s.name     = 'JKImageView'
   s.version  = '0.0.1'
   s.ios.deployment_target = '7.0'
-  s.license  = 'MIT'
   s.summary  = 'imageNet for your iOS app.'
   s.homepage = 'http://www.flywithme.top'
   s.authors   = { 'Jack' => '369495368@qq.com' }
