@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+JKWebp.h"
-#import "webp/decode.h"
+#import <WebP/decode.h>
 
 // Callback for CGDataProviderRelease
 static void JKFreeImageData(void *info, const void *data, size_t size)

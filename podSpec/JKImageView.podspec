@@ -13,9 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'JKWebImageLoader/*.{h,m}'
   s.framework = 'ImageIO'
   s.requires_arc = true
-  s.description  = <<-DESC
-                    blalalalablalalalablalalalablalalalablalalalablalalalablalalalablalalala
-                   DESC               
+  s.description  = "blalalalablalalalablalalalablalalalablalalalablalalalablalalalablalalala"              
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'AssetsLibrary', 'ImageIO', 'Accelerate', 'MobileCoreServices'
   s.ios.vendored_frameworks = 'Vendor/WebP.framework'

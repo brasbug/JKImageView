@@ -35,6 +35,12 @@
 		043A104E1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
 		043A104F1C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
 		043A10501C3E53A700646E8F /* UIImageView+JKWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */; };
+		043A10541C3E5DD000646E8F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A10521C3E5DD000646E8F /* WebP.framework */; };
+		043A10551C3E5DD000646E8F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A10521C3E5DD000646E8F /* WebP.framework */; };
+		043A10561C3E5DD000646E8F /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043A10521C3E5DD000646E8F /* WebP.framework */; };
+		043A10571C3E5DD000646E8F /* WebP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 043A10531C3E5DD000646E8F /* WebP.sh */; };
+		043A10581C3E5DD000646E8F /* WebP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 043A10531C3E5DD000646E8F /* WebP.sh */; };
+		043A10591C3E5DD000646E8F /* WebP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 043A10531C3E5DD000646E8F /* WebP.sh */; };
 		045417751BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417761BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
 		045417771BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */; };
@@ -103,6 +109,8 @@
 		043A10391C3E53A700646E8F /* UIImage+JKWebp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKWebp.m"; sourceTree = "<group>"; };
 		043A103A1C3E53A700646E8F /* UIImageView+JKWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKWebCache.h"; sourceTree = "<group>"; };
 		043A103B1C3E53A700646E8F /* UIImageView+JKWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKWebCache.m"; sourceTree = "<group>"; };
+		043A10521C3E5DD000646E8F /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		043A10531C3E5DD000646E8F /* WebP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = WebP.sh; sourceTree = "<group>"; };
 		045417731BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc_setAssociatedObject.h; sourceTree = "<group>"; };
 		045417741BF0BA08001CC4E4 /* TestObjc_setAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjc_setAssociatedObject.m; sourceTree = "<group>"; };
 		0470CA731BEDF0A700287A09 /* TestGCDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDMethod.h; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A10541C3E5DD000646E8F /* WebP.framework in Frameworks */,
 				040C4B8C1C1685B700F9CD9F /* WebKit.framework in Frameworks */,
 				74D6729D50D72CB2EE6BFE2A /* libPods.a in Frameworks */,
 			);
@@ -149,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A10551C3E5DD000646E8F /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A10561C3E5DD000646E8F /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +205,15 @@
 			);
 			path = JKWebImageLoader;
 			sourceTree = SOURCE_ROOT;
+		};
+		043A10511C3E5DD000646E8F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				043A10521C3E5DD000646E8F /* WebP.framework */,
+				043A10531C3E5DD000646E8F /* WebP.sh */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
 		};
 		047B28EB1BEC5028008763A1 /* SubViews */ = {
 			isa = PBXGroup;
@@ -245,6 +265,7 @@
 		049456AF1BEB6AC300E0CBDA /* JKImageView */ = {
 			isa = PBXGroup;
 			children = (
+				043A10511C3E5DD000646E8F /* Vendor */,
 				043A102C1C3E53A700646E8F /* JKWebImageLoader */,
 				047B29051BEC9F2C008763A1 /* CustomMethod */,
 				047B28EB1BEC5028008763A1 /* SubViews */,
@@ -417,6 +438,7 @@
 				047B28F71BEC504F008763A1 /* TestTableViewCell.xib in Resources */,
 				049456BD1BEB6AC300E0CBDA /* Assets.xcassets in Resources */,
 				049456BB1BEB6AC300E0CBDA /* Main.storyboard in Resources */,
+				043A10571C3E5DD000646E8F /* WebP.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A10581C3E5DD000646E8F /* WebP.sh in Resources */,
 				047B28F81BEC504F008763A1 /* TestTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A10591C3E5DD000646E8F /* WebP.sh in Resources */,
 				047B28F91BEC504F008763A1 /* TestTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +701,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				GCC_PREFIX_HEADER = JKImageView/PrefixHeader.pch;
 				INFOPLIST_FILE = JKImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -694,6 +722,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				GCC_PREFIX_HEADER = JKImageView/PrefixHeader.pch;
 				INFOPLIST_FILE = JKImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -708,6 +740,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				INFOPLIST_FILE = JKImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewTests;
@@ -720,6 +756,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				INFOPLIST_FILE = JKImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewTests;
@@ -731,6 +771,10 @@
 		049456E11BEB6AC400E0CBDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				INFOPLIST_FILE = JKImageViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewUITests;
@@ -743,6 +787,10 @@
 		049456E21BEB6AC400E0CBDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JKImageView/Vendor",
+				);
 				INFOPLIST_FILE = JKImageViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jack.JKImageViewUITests;
