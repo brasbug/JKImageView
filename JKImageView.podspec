@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version  = '0.0.1'
   s.summary  = 'imageNet for your iOS app.'
   s.authors   = { 'Jack' => '369495368@qq.com' }
-  s.source   = { :git => 'https://github.com/brasbug/JKImageView.git'}
+  s.source   = { :git => 'https://github.com/brasbug/JKImageView.git', :tag =>podversion}
   s.homepage     = 'http://www.flywithme.top'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.description = 'blablabla'
@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     blalalala
                    DESC
+                   
 end
