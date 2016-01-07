@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.description  = "blalalalablalalalablalalalablalalalablalalalablalalalablalalalablalalala"              
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'AssetsLibrary', 'ImageIO', 'Accelerate', 'MobileCoreServices'
-  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
+  s.ios.vendored_frameworks = 'JKImageView/Vendor/WebP.framework'
              
 end
